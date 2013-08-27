@@ -28,7 +28,25 @@
                   Generate from an ASIN, UPC, EAN
                 </h3>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                  <form class="form-horizontal" action="" method="post" autocomplete="off">
+                    {% csrf_token %}
+                    
+                    <div class="control-group">
+                        {% for field in product_form %}
+                        <label class="control-label" for="id_company">{{ field.label }}</label>                        
+                        <div class="controls">
+                            {{ field.errors }}
+                            {{ field }}
+                            <span class="help-block">{{ field.help_text }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-inverse">Generate Barcode</button>
+                        <button type="submit" class="btn btn-default" onclick="this.form.reset()">Clear Form</button>
+                    </div>
+                </form> 
                 </p>
               </div>
             </div>

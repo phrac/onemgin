@@ -130,6 +130,7 @@ INSTALLED_APPS = (
 
     # Third party apps
     'south',
+    'storages',
 
     # Local apps
     'labels',
