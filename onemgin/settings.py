@@ -1,4 +1,5 @@
-# Django settings for onemgin project.
+import os
+DIRNAME = os.path.dirname(__file__)
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -11,7 +12,7 @@ MANAGERS = ADMINS
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
+        'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
         'NAME': '',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': '',
@@ -72,6 +73,7 @@ STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(DIRNAME, '../static'),
 )
 
 # List of finder classes that know how to find static files in
@@ -83,7 +85,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = 'n(-sqjz86-w77neipb6komw7#&_f7pmw064^xzpfcy378x9rcc'
+SECRET_KEY = ''
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -111,6 +113,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
+    os.path.join(DIRNAME, '../templates')
 )
 
 INSTALLED_APPS = (
@@ -121,9 +124,17 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Uncomment the next line to enable the admin:
-    # 'django.contrib.admin',
+    'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
-    # 'django.contrib.admindocs',
+    'django.contrib.admindocs',
+
+    # Third party apps
+    'south',
+
+    # Local apps
+    'labels',
+    'products',
+
 )
 
 # A sample logging configuration. The only tangible logging
@@ -154,3 +165,5 @@ LOGGING = {
         },
     }
 }
+
+from settings_local import *
