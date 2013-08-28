@@ -12,7 +12,7 @@ def home(request):
         if productform.is_valid():
             product = amazon_utils.get_or_create_product(productform.cleaned_data['code'])
             barcode = product.generate_barcode()
-            response = HttpResponse(content_type='image/svg+xml')
+            response = HttpResponse(content_type='image/png')
             response.write(barcode.getvalue())
             return response
     

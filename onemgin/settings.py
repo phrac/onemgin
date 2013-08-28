@@ -138,6 +138,9 @@ INSTALLED_APPS = (
 
 )
 
+# Amazon S3 Storage Settings
+DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
+
 # A sample logging configuration. The only tangible logging
 # performed by this configuration is to send an email to
 # the site admins on every HTTP 500 error when DEBUG=False.
