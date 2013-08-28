@@ -1,4 +1,6 @@
 from django.db import models
+from django.core.files.uploadedfile import InMemoryUploadedFile
+from StringIO import StringIO
 import random
 import string
 
@@ -25,48 +27,61 @@ class Product(models.Model):
     manufacturer = models.CharField(max_length=128, null=True)
     description = models.CharField(max_length=512, null=True)
     image_url = models.CharField(max_length=512, null=True)
-    barcodes = models.ManyToManyField("Barcode",
-                                      related_name="product_barcodes")
+    amazon_url = models.URLField(null=True)
+
 
     def save(self, *args, **kwargs):
         self.onemg = onemg_generator()
         super(Product, self).save(*args, **kwargs)
 
-    def generate_barcode(self, type='EAN'):
-        #from reportlab.lib.units import mm
-        #from reportlab.graphics.barcode import createBarcodeDrawing
-        #from reportlab.graphics.shapes import Drawing, String
-        #from reportlab.graphics.charts.barcharts import HorizontalBarChart
-        #barcode = createBarcodeDrawing('EAN13', value=str(self.upc),
-        #                               width=144, height=72, ratio=5.75, humanReadable=True)
-
-        from django.core.files.uploadedfile import InMemoryUploadedFile
-        from StringIO import StringIO
-        #import barcode
+    def generate_barcode(self, type='ean13', text=True):
         fp = StringIO()
-        #EAN = barcode.get_barcode_class('ean13')
-        #ean = EAN(str(self.ean))
-        #ean.write(fp)
-        #generate('EAN13', str(self.ean), writer=ImageWriter(), output=fp)
+
         from elaphe import barcode
-        barcode = barcode('ean13', str(self.ean),
-                          options=dict(includetext=True, textfont='Courier New',
-                                       textsize=12, showborder=False),
-                          margin=1, scale=1.25)
+        if type == 'ean13':
+            barcode_text = self.ean
+            code_options = dict(includetext=text, textfont='Courier New',
+                                       textsize=12, showborder=False)
+            margin=1
+            scale=1.25
+            data_mode=None
+        if type == 'upca':
+            barcode_text = self.upc
+            code_options = dict(includetext=text, textfont='Courier New',
+                                       textsize=12, showborder=False)
+            margin=1
+            scale=1.25
+            data_mode = None
+        if type == 'qrcode':
+            barcode_text = self.amazon_url
+            code_options = dict(version=9, eclevel='M')
+            margin=10
+            scale = 1
+            data_mode='8bits'
+        
+        barcode = barcode(type, str(barcode_text), options=code_options, margin=margin, scale=scale, data_mode=data_mode)
         
         barcode.save(fp, format='PNG')
-        file = InMemoryUploadedFile(fp, None, "%s-EAN13.png" % self.onemg,
+        file = InMemoryUploadedFile(fp, None, "%s-%s.png" % (self.onemg, type),
                                     'image/png', fp.len, None)
-        barcode_type = BarcodeType.objects.get(name='EAN13')
-        obj = Barcode(type=barcode_type)
-        obj.image.save(file.name, file)
+        barcode_type = BarcodeType.objects.get(name=type.upper())
+        try:
+            obj = Barcode.objects.get(product=self, type=barcode_type)
+        except:
+            obj = Barcode(product=self, type=barcode_type)
+            obj.image.save(file.name, file)
+            obj.save()
         return obj
 
 
 
 class Barcode(models.Model):
+    product = models.ForeignKey(Product)
     type = models.ForeignKey('BarcodeType')
     image = models.FileField(upload_to='barcodes/ean13/', null=True)
+    
+    class Meta:
+        unique_together = ('product', 'type')
 
 class BarcodeType(models.Model):
     name = models.CharField(max_length=32)

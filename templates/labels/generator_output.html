@@ -1,0 +1,23 @@
+{% load thumbnail %}
+<h3>{{ product.description|truncatechars:75 }}
+{% if product.image_url %}
+{% thumbnail product.image_url "125x125" as im %}
+<center><img class="thumbnail" src="{{ im.url }}" alt="{{ product.onemg }} image" /></center>
+{% endthumbnail %}
+{% endif %}
+</h3>
+
+<center>
+    <img src="{{ ean.image.url }}" />
+    <h3>EAN-13 Barcode</h3>
+</center>
+
+<center>
+    <img src="{{ upc.image.url }}" />
+    <h3>UPC Barcode</h3>
+</center>
+<center>
+    <img src="{{ qrcode.image.url }}" />
+    <h3>Product QR Code</h3>
+</center>
+<p>Want to save these barcodes? Just right click and select 'Save As'.</p>

@@ -131,6 +131,7 @@ INSTALLED_APPS = (
     # Third party apps
     'south',
     'storages',
+    'sorl.thumbnail',
 
     # Local apps
     'labels',

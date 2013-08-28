@@ -1,0 +1,1657 @@
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 09:58:43 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 85312, cores: 1)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 85312)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 09:58:56 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 85330, cores: 1)
+[pid: 85330|app: 0|req: 1/1] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 09:59:06 2013] GET / => generated 14529 bytes in 130 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 85330|app: 0|req: 2/2] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 09:59:06 2013] GET /images/assets/iphone.png => generated 2074 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 85330|app: 0|req: 3/3] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 09:59:06 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 85330|app: 0|req: 4/4] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 09:59:06 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 85330)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 09:59:44 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 85382, cores: 1)
+[pid: 85382|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 09:59:59 2013] POST / => generated 35 bytes in 1939 msecs (HTTP/1.1 200) 1 headers in 44 bytes (2 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 85382)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:05:13 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 85767, cores: 1)
+[pid: 85767|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:05:18 2013] POST / => generated 41 bytes in 1508 msecs (HTTP/1.1 200) 1 headers in 44 bytes (2 switches on core 0)
+[pid: 85767|app: 0|req: 2/2] 68.13.144.194 () {38 vars in 689 bytes} [Wed Aug 28 10:05:22 2013] GET / => generated 14529 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 85767|app: 0|req: 3/3] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:05:52 2013] POST / => generated 41 bytes in 2202 msecs (HTTP/1.1 200) 1 headers in 44 bytes (2 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 85767)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:06:28 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 85850, cores: 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 19, in home
+    response.write(file.get_value())
+AttributeError: 'cStringIO.StringI' object has no attribute 'get_value'
+[pid: 85850|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:06:30 2013] POST / => generated 53674 bytes in 1393 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 85850)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:07:03 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 85891, cores: 1)
+[pid: 85891|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:07:04 2013] POST / => generated 609 bytes in 1406 msecs (HTTP/1.1 200) 1 headers in 44 bytes (2 switches on core 0)
+[pid: 85891|app: 0|req: 2/2] 68.13.144.194 () {40 vars in 776 bytes} [Wed Aug 28 10:07:32 2013] GET /admin/products/ => generated 2960 bytes in 37 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 3/3] 68.13.144.194 () {40 vars in 780 bytes} [Wed Aug 28 10:07:33 2013] GET /admin/products/barcode/ => generated 4796 bytes in 38 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 4/4] 68.13.144.194 () {40 vars in 708 bytes} [Wed Aug 28 10:07:33 2013] GET /admin/jsi18n/ => generated 5169 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 5/5] 68.13.144.194 () {48 vars in 964 bytes} [Wed Aug 28 10:07:38 2013] POST /admin/products/barcode/ => generated 3106 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 6/6] 68.13.144.194 () {48 vars in 964 bytes} [Wed Aug 28 10:07:39 2013] POST /admin/products/barcode/ => generated 0 bytes in 21 msecs (HTTP/1.1 302) 7 headers in 385 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 7/7] 68.13.144.194 () {42 vars in 946 bytes} [Wed Aug 28 10:07:39 2013] GET /admin/products/barcode/ => generated 2967 bytes in 31 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 8/8] 68.13.144.194 () {42 vars in 739 bytes} [Wed Aug 28 10:07:39 2013] GET /admin/jsi18n/ => generated 5169 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 9/9] 68.13.144.194 () {42 vars in 826 bytes} [Wed Aug 28 10:08:14 2013] GET /admin/products/ => generated 2960 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 10/10] 68.13.144.194 () {40 vars in 779 bytes} [Wed Aug 28 10:08:16 2013] GET /admin/products/product/ => generated 4187 bytes in 34 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 11/11] 68.13.144.194 () {40 vars in 707 bytes} [Wed Aug 28 10:08:16 2013] GET /admin/jsi18n/ => generated 5169 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 12/12] 68.13.144.194 () {40 vars in 780 bytes} [Wed Aug 28 10:18:30 2013] GET /admin/products/barcode/ => generated 2846 bytes in 28 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 13/13] 68.13.144.194 () {40 vars in 708 bytes} [Wed Aug 28 10:18:30 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 14/14] 68.13.144.194 () {44 vars in 866 bytes} [Wed Aug 28 10:18:44 2013] GET /admin/products/barcode/ => generated 2846 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 85891|app: 0|req: 15/15] 68.13.144.194 () {42 vars in 739 bytes} [Wed Aug 28 10:18:44 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 85891)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:18:49 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 87080, cores: 1)
+[pid: 87080|app: 0|req: 1/1] 68.13.144.194 () {44 vars in 866 bytes} [Wed Aug 28 10:18:49 2013] GET /admin/products/barcode/ => generated 2846 bytes in 175 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 87080|app: 0|req: 2/2] 68.13.144.194 () {42 vars in 739 bytes} [Wed Aug 28 10:18:49 2013] GET /admin/jsi18n/ => generated 5169 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 87080)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:19:39 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 87171, cores: 1)
+[pid: 87171|app: 0|req: 1/1] 68.13.144.194 () {38 vars in 689 bytes} [Wed Aug 28 10:19:48 2013] GET / => generated 14529 bytes in 128 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 16, in home
+    barcode = product.generate_barcode()
+  File "./products/models.py", line 64, in generate_barcode
+    obj.image.save(file.name, file)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/fields/files.py", line 95, in save
+    self.instance.save()
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/query.py", line 1675, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 56, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 54, in execute
+    return self.cursor.execute(query, args)
+IntegrityError: null value in column "product_id" violates not-null constraint
+DETAIL:  Failing row contains (6, 1, barcodes/ean13/BPLMRKQ2QF-EAN13.png, null).
+
+[pid: 87171|app: 0|req: 2/2] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:19:51 2013] POST / => generated 95702 bytes in 959 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 87171)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:20:09 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 87241, cores: 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 16, in home
+    barcode = product.generate_barcode()
+  File "./products/models.py", line 66, in generate_barcode
+    self.barcodes.add(obj)
+AttributeError: 'Product' object has no attribute 'barcodes'
+[pid: 87241|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:20:12 2013] POST / => generated 57313 bytes in 1054 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 16, in home
+    barcode = product.generate_barcode()
+  File "./products/models.py", line 68, in generate_barcode
+    
+UnboundLocalError: local variable 'obj' referenced before assignment
+[pid: 87241|app: 0|req: 2/2] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:20:30 2013] POST / => generated 55245 bytes in 190 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 87241)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:20:48 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 87336, cores: 1)
+[pid: 87336|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:20:50 2013] POST / => generated 609 bytes in 810 msecs (HTTP/1.1 200) 1 headers in 44 bytes (2 switches on core 0)
+[pid: 87336|app: 0|req: 2/2] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:20:55 2013] POST / => generated 609 bytes in 607 msecs (HTTP/1.1 200) 1 headers in 44 bytes (2 switches on core 0)
+[pid: 87336|app: 0|req: 3/3] 68.13.144.194 () {44 vars in 866 bytes} [Wed Aug 28 10:21:01 2013] GET /admin/products/barcode/ => generated 3983 bytes in 48 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 4/4] 68.13.144.194 () {42 vars in 739 bytes} [Wed Aug 28 10:21:01 2013] GET /admin/jsi18n/ => generated 5169 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 5/5] 68.13.144.194 () {44 vars in 865 bytes} [Wed Aug 28 10:21:02 2013] GET /admin/products/barcode/ => generated 3983 bytes in 37 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 6/6] 68.13.144.194 () {42 vars in 739 bytes} [Wed Aug 28 10:21:03 2013] GET /admin/jsi18n/ => generated 5169 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 7/7] 66.87.76.212 () {40 vars in 706 bytes} [Wed Aug 28 10:33:32 2013] GET / => generated 14683 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 8/8] 66.87.76.212 () {42 vars in 761 bytes} [Wed Aug 28 10:33:32 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 9/9] 66.87.76.212 () {42 vars in 741 bytes} [Wed Aug 28 10:33:32 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 10/10] 66.87.76.212 () {42 vars in 761 bytes} [Wed Aug 28 10:33:32 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 11/11] 66.87.76.212 () {48 vars in 875 bytes} [Wed Aug 28 10:34:23 2013] POST / => generated 579 bytes in 1435 msecs (HTTP/1.1 200) 1 headers in 44 bytes (2 switches on core 0)
+[pid: 87336|app: 0|req: 12/12] 66.87.76.212 () {40 vars in 710 bytes} [Wed Aug 28 10:34:25 2013] GET /apple-touch-icon-precomposed.png => generated 2098 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 87336|app: 0|req: 13/13] 66.87.76.212 () {40 vars in 686 bytes} [Wed Aug 28 10:34:25 2013] GET /apple-touch-icon.png => generated 2062 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 87336)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:35:09 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 88567, cores: 1)
+[pid: 88567|app: 0|req: 1/1] 68.13.144.194 () {38 vars in 689 bytes} [Wed Aug 28 10:35:13 2013] GET / => generated 14683 bytes in 131 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 2/2] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:35:15 2013] GET / => generated 14683 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 3/3] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:35:15 2013] GET /images/assets/iphone.png => generated 2074 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 4/4] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:35:15 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 5/5] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:35:15 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 6/6] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:35:18 2013] GET / => generated 14683 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 7/7] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:35:18 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 8/8] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:35:18 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 9/9] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:35:18 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 10/10] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:35:35 2013] GET / => generated 14683 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 11/11] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:35:36 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 12/12] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:35:36 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 13/13] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:35:36 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 25, in home
+    context_instance=RequestContext(request))
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: labels/generator_output
+[pid: 88567|app: 0|req: 14/14] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 10:35:51 2013] POST / => generated 9932 bytes in 1524 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 15/15] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:37:01 2013] GET / => generated 14609 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 16/16] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:37:01 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 17/17] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:37:01 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88567|app: 0|req: 18/18] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:37:01 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 25, in home
+    productform = ProductForm()
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/shortcuts/__init__.py", line 29, in render_to_response
+    return HttpResponse(loader.render_to_string(*args, **kwargs), **httpresponse_kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/template/loader.py", line 170, in render_to_string
+    t = get_template(template_name)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/template/loader.py", line 146, in get_template
+    template, origin = find_template(template_name)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/template/loader.py", line 139, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: labels/generator_output
+[pid: 88567|app: 0|req: 19/19] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:37:12 2013] POST / => generated 76067 bytes in 649 msecs (HTTP/1.1 500) 1 headers in 63 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 88567)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 10:37:32 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 88841, cores: 1)
+[pid: 88841|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 893 bytes} [Wed Aug 28 10:37:34 2013] POST / => generated 186 bytes in 367 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 2/2] 68.13.144.194 () {38 vars in 689 bytes} [Wed Aug 28 10:37:37 2013] GET / => generated 14609 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 3/3] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:37:48 2013] GET / => generated 14683 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 4/4] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:37:48 2013] GET /images/assets/iphone.png => generated 2074 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 5/5] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:37:48 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 6/6] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:37:48 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 7/7] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 10:37:51 2013] POST / => generated 188 bytes in 154 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 8/8] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:41:49 2013] GET / => generated 14683 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 9/9] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:41:50 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 10/10] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:41:50 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 11/11] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:41:50 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 12/12] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 10:42:08 2013] POST / => generated 186 bytes in 151 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 13/13] 68.13.144.194 () {44 vars in 866 bytes} [Wed Aug 28 10:42:32 2013] GET /admin/products/barcode/ => generated 4390 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 14/14] 68.13.144.194 () {42 vars in 739 bytes} [Wed Aug 28 10:42:32 2013] GET /admin/jsi18n/ => generated 5169 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 15/15] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:42:51 2013] GET / => generated 14683 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 16/16] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:42:51 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 17/17] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:42:51 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 18/18] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:42:51 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 19/19] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:43:21 2013] GET / => generated 14683 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 20/20] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:43:22 2013] GET /images/assets/iphone.png => generated 2074 bytes in 5 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 21/21] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:43:22 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 22/22] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:43:22 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 23/23] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 10:43:45 2013] POST / => generated 186 bytes in 1122 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 15, in home
+    product = amazon_utils.get_or_create_product(productform.cleaned_data['code'])
+  File "./products/amazon_utils.py", line 12, in get_or_create_product
+    product.save()
+  File "./products/models.py", line 32, in save
+    super(Product, self).save(*args, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/query.py", line 1675, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 56, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 54, in execute
+    return self.cursor.execute(query, args)
+IntegrityError: null value in column "ean" violates not-null constraint
+DETAIL:  Failing row contains (6, XEKFIIL67A, null, null, null, null, null, null, null, B00860WLOO, null, null, Street Bike Motorcycle Gloves A9 Bk/grey, http://ecx.images-amazon.com/images/I/413pxgk8xGL.jpg).
+
+[pid: 88841|app: 0|req: 24/24] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 10:45:27 2013] POST / => generated 10704 bytes in 319 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 25/25] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 10:46:30 2013] POST / => generated 285 bytes in 1206 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 26/26] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 10:47:48 2013] POST / => generated 289 bytes in 1173 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 27/27] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:56:30 2013] GET / => generated 14717 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 28/28] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:56:30 2013] GET /images/assets/iphone.png => generated 2074 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 29/29] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:56:30 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 30/30] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:56:30 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 31/31] 68.13.144.194 () {46 vars in 752 bytes} [Wed Aug 28 10:56:37 2013] POST / => generated 2294 bytes in 1 msecs (HTTP/1.1 403) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 32/32] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:58:42 2013] GET / => generated 14724 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 33/33] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:58:42 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 34/34] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:58:42 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 35/35] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:58:42 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 36/36] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 10:59:15 2013] GET / => generated 14724 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 37/37] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 10:59:15 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 38/38] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:59:15 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 39/39] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 10:59:16 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 40/40] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 10:59:18 2013] POST / => generated 267 bytes in 1299 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 41/41] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 11:01:26 2013] GET / => generated 14724 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 42/42] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 11:01:26 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 43/43] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 11:01:26 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 44/44] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 11:01:26 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 88841|app: 0|req: 45/45] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:01:37 2013] POST / => generated 288 bytes in 1078 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 88841)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 11:04:49 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 92049, cores: 1)
+[pid: 92049|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:05:10 2013] POST / => generated 478 bytes in 2645 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 2/2] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:08:18 2013] POST / => generated 527 bytes in 1923 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 3/3] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:09:05 2013] POST / => generated 518 bytes in 2745 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 4/4] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:10:02 2013] POST / => generated 317 bytes in 1174 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 5/5] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:10:48 2013] POST / => generated 581 bytes in 1707 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 6/6] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:11:21 2013] POST / => generated 619 bytes in 2039 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 7/7] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:12:00 2013] POST / => generated 575 bytes in 1942 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 8/8] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:16:53 2013] POST / => generated 576 bytes in 2776 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 9/9] 8.28.16.254 () {34 vars in 532 bytes} [Wed Aug 28 11:26:04 2013] GET / => generated 14724 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 10/10] 204.194.141.29 () {40 vars in 654 bytes} [Wed Aug 28 11:26:05 2013] GET / => generated 14724 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 11/11] 204.194.141.29 () {44 vars in 746 bytes} [Wed Aug 28 11:26:05 2013] GET /images/assets/iphone.png => generated 2074 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 12/12] 204.194.141.29 () {44 vars in 766 bytes} [Wed Aug 28 11:26:05 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 13/13] 204.194.141.29 () {44 vars in 766 bytes} [Wed Aug 28 11:26:05 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 14/14] 204.194.141.29 () {50 vars in 830 bytes} [Wed Aug 28 11:26:29 2013] POST / => generated 567 bytes in 2211 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 15/15] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 11:37:48 2013] POST / => generated 582 bytes in 2230 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 15, in home
+    product = amazon_utils.get_or_create_product(productform.cleaned_data['code'])
+  File "./products/amazon_utils.py", line 10, in get_or_create_product
+    az = amazon.lookup(ItemId=asin)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/amazon/api.py", line 105, in lookup
+    etree.tostring(root, pretty_print=True)))
+AsinNotFound: ASIN(s) not found: '<ItemLookupResponse xmlns="http://webservices.amazon.com/AWSECommerceService/2011-08-01">
+  <OperationRequest>
+    <HTTPHeaders>
+      <Header Name="UserAgent" Value="Python-urllib/2.7"/>
+    </HTTPHeaders>
+    <RequestId>1415df97-e83b-40f6-9673-a990539814c6</RequestId>
+    <Arguments>
+      <Argument Name="Operation" Value="ItemLookup"/>
+      <Argument Name="Service" Value="AWSECommerceService"/>
+      <Argument Name="Signature" Value="50pqwps+OZFQLX17jvOOpY9h2q6+84dMtfvujfGLi/A="/>
+      <Argument Name="AssociateTag" Value="partfindr-20"/>
+      <Argument Name="Version" Value="2011-08-01"/>
+      <Argument Name="ItemId" Value="poop"/>
+      <Argument Name="AWSAccessKeyId" Value="AKIAJEBQFIW46J5LFB3Q"/>
+      <Argument Name="Timestamp" Value="2013-08-28T16:38:17Z"/>
+      <Argument Name="ResponseGroup" Value="Large"/>
+    </Arguments>
+    <RequestProcessingTime>0.0094150000000000</RequestProcessingTime>
+  </OperationRequest>
+  <Items>
+    <Request>
+      <IsValid>True</IsValid>
+      <ItemLookupRequest>
+        <IdType>ASIN</IdType>
+        <ItemId>POOP</ItemId>
+        <ResponseGroup>Large</ResponseGroup>
+        <VariationPage>All</VariationPage>
+      </ItemLookupRequest>
+      <Errors>
+        <Error>
+          <Code>AWS.InvalidParameterValue</Code>
+          <Message>POOP is not a valid value for ItemId. Please change this value and retry your request.</Message>
+        </Error>
+      </Errors>
+    </Request>
+  </Items>
+</ItemLookupResponse>
+'
+[pid: 92049|app: 0|req: 16/16] 68.13.144.194 () {48 vars in 840 bytes} [Wed Aug 28 11:38:17 2013] POST / => generated 11767 bytes in 306 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 17/17] 66.87.76.212 () {48 vars in 875 bytes} [Wed Aug 28 12:21:09 2013] POST / => generated 559 bytes in 1225 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 18/18] 66.87.76.212 () {40 vars in 710 bytes} [Wed Aug 28 12:21:12 2013] GET /apple-touch-icon-precomposed.png => generated 2098 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 19/19] 66.87.76.212 () {40 vars in 686 bytes} [Wed Aug 28 12:21:13 2013] GET /apple-touch-icon.png => generated 2062 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 20/20] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 12:37:58 2013] POST / => generated 556 bytes in 2094 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 21/21] 68.13.144.194 () {40 vars in 719 bytes} [Wed Aug 28 12:38:28 2013] GET / => generated 14724 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 22/22] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 12:38:28 2013] GET /images/assets/iphone.png => generated 2074 bytes in 59 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 23/23] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:38:29 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 4 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 92049|app: 0|req: 24/24] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:38:29 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 4 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 92049)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 12:44:38 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 337, cores: 1)
+[pid: 337|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 840 bytes} [Wed Aug 28 12:44:49 2013] POST / => generated 14743 bytes in 190 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 337|app: 0|req: 2/2] 68.13.144.194 () {40 vars in 723 bytes} [Wed Aug 28 12:44:49 2013] GET /images/assets/iphone.png => generated 2074 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 337|app: 0|req: 3/3] 68.13.144.194 () {40 vars in 744 bytes} [Wed Aug 28 12:44:49 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 337|app: 0|req: 4/4] 68.13.144.194 () {40 vars in 744 bytes} [Wed Aug 28 12:44:49 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 337|app: 0|req: 5/5] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 12:44:56 2013] GET / => generated 14724 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 337|app: 0|req: 6/6] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 12:44:56 2013] GET /images/assets/iphone.png => generated 2074 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 337|app: 0|req: 7/7] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:44:56 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 337|app: 0|req: 8/8] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:44:56 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 337)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 12:47:38 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 605, cores: 1)
+[pid: 605|app: 0|req: 1/1] 68.13.144.194 () {40 vars in 719 bytes} [Wed Aug 28 12:47:42 2013] GET / => generated 14724 bytes in 131 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 2/2] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 12:47:42 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 3/3] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:47:42 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 4/4] 68.13.144.194 () {42 vars in 774 bytes} [Wed Aug 28 12:47:42 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 5/5] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 12:47:54 2013] POST / => generated 14743 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 6/6] 68.13.144.194 () {40 vars in 724 bytes} [Wed Aug 28 12:47:55 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 7/7] 68.13.144.194 () {40 vars in 744 bytes} [Wed Aug 28 12:47:55 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 8/8] 68.13.144.194 () {40 vars in 744 bytes} [Wed Aug 28 12:47:55 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 9/9] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 12:48:05 2013] GET / => generated 14724 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 10/10] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 12:48:05 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 11/11] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:48:05 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 605|app: 0|req: 12/12] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:48:05 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 605)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 12:48:34 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 622, cores: 1)
+[pid: 622|app: 0|req: 1/1] 68.13.144.194 () {40 vars in 719 bytes} [Wed Aug 28 12:48:35 2013] GET / => generated 14724 bytes in 126 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 622|app: 0|req: 2/2] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 12:48:36 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 622|app: 0|req: 3/3] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:48:36 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 622|app: 0|req: 4/4] 68.13.144.194 () {42 vars in 774 bytes} [Wed Aug 28 12:48:36 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 622|app: 0|req: 5/5] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 12:48:41 2013] POST / => generated 14743 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 622|app: 0|req: 6/6] 68.13.144.194 () {40 vars in 724 bytes} [Wed Aug 28 12:48:41 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 622|app: 0|req: 7/7] 68.13.144.194 () {40 vars in 743 bytes} [Wed Aug 28 12:48:41 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 622|app: 0|req: 8/8] 68.13.144.194 () {40 vars in 744 bytes} [Wed Aug 28 12:48:41 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 622)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 12:49:03 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 634, cores: 1)
+[pid: 634|app: 0|req: 1/1] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 12:49:04 2013] GET / => generated 14724 bytes in 127 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 634|app: 0|req: 2/2] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 12:49:04 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 634|app: 0|req: 3/3] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:49:04 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 634|app: 0|req: 4/4] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 12:49:04 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 634|app: 0|req: 5/5] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 12:49:06 2013] POST / => generated 584 bytes in 191 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 634)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 12:52:39 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 711, cores: 1)
+[pid: 711|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 12:52:58 2013] POST / => generated 649 bytes in 2068 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 711|app: 0|req: 2/2] 66.249.73.81 () {36 vars in 487 bytes} [Wed Aug 28 12:55:42 2013] GET / => generated 14724 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 711|app: 0|req: 3/3] 66.249.73.81 () {36 vars in 503 bytes} [Wed Aug 28 13:00:31 2013] GET /faq.html => generated 2026 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 711)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:01:15 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 1171, cores: 1)
+[pid: 1171|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:01:16 2013] POST / => generated 685 bytes in 310 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1171|app: 0|req: 2/2] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:02:08 2013] POST / => generated 597 bytes in 2523 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1171|app: 0|req: 3/3] 66.249.73.81 () {36 vars in 503 bytes} [Wed Aug 28 13:04:15 2013] GET /404.html => generated 2026 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 1171)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:05:13 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 1276, cores: 1)
+[pid: 1276|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:05:17 2013] POST / => generated 0 bytes in 123 msecs (HTTP/1.1 400) 1 headers in 68 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 2/2] 68.13.144.194 () {38 vars in 689 bytes} [Wed Aug 28 13:06:37 2013] GET / => generated 14724 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 3/3] 68.13.144.194 () {40 vars in 724 bytes} [Wed Aug 28 13:06:37 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 4/4] 68.13.144.194 () {40 vars in 744 bytes} [Wed Aug 28 13:06:37 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 5/5] 68.13.144.194 () {40 vars in 744 bytes} [Wed Aug 28 13:06:37 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 6/6] 68.13.144.194 () {38 vars in 699 bytes} [Wed Aug 28 13:06:50 2013] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 2 headers in 106 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 7/7] 68.13.144.194 () {38 vars in 701 bytes} [Wed Aug 28 13:06:50 2013] GET /admin/ => generated 6333 bytes in 41 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 8/8] 68.13.144.194 () {42 vars in 826 bytes} [Wed Aug 28 13:06:59 2013] GET /admin/products/barcode/ => generated 8083 bytes in 44 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 9/9] 68.13.144.194 () {40 vars in 708 bytes} [Wed Aug 28 13:06:59 2013] GET /admin/jsi18n/ => generated 5169 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 10/10] 68.13.144.194 () {42 vars in 826 bytes} [Wed Aug 28 13:07:02 2013] GET /admin/products/product/ => generated 8278 bytes in 41 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 11/11] 68.13.144.194 () {40 vars in 708 bytes} [Wed Aug 28 13:07:02 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 12/12] 68.13.144.194 () {40 vars in 779 bytes} [Wed Aug 28 13:07:06 2013] GET /admin/products/barcodetype/ => generated 4030 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 13/13] 68.13.144.194 () {40 vars in 712 bytes} [Wed Aug 28 13:07:06 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 14/14] 68.13.144.194 () {40 vars in 808 bytes} [Wed Aug 28 13:07:12 2013] GET /admin/products/barcodetype/add/ => generated 3283 bytes in 29 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 15/15] 68.13.144.194 () {40 vars in 716 bytes} [Wed Aug 28 13:07:12 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 16/16] 68.13.144.194 () {48 vars in 1058 bytes} [Wed Aug 28 13:07:16 2013] POST /admin/products/barcodetype/add/ => generated 0 bytes in 11 msecs (HTTP/1.1 302) 7 headers in 424 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 17/17] 68.13.144.194 () {42 vars in 997 bytes} [Wed Aug 28 13:07:16 2013] GET /admin/products/barcodetype/ => generated 4402 bytes in 32 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 18/18] 68.13.144.194 () {42 vars in 743 bytes} [Wed Aug 28 13:07:17 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 19/19] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:08:12 2013] GET / => generated 14658 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 20/20] 68.13.144.194 () {42 vars in 755 bytes} [Wed Aug 28 13:08:13 2013] GET /images/assets/iphone.png => generated 2074 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 21/21] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:08:13 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 22/22] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:08:13 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 23/23] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:08:42 2013] GET / => generated 14000 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 24/24] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:08:42 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 25/25] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:08:42 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 26/26] 68.13.144.194 () {40 vars in 719 bytes} [Wed Aug 28 13:08:59 2013] GET / => generated 13681 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 27/27] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:08:59 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 28/28] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:08:59 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 29/29] 68.13.144.194 () {40 vars in 719 bytes} [Wed Aug 28 13:10:01 2013] GET / => generated 13647 bytes in 7 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 30/30] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:10:01 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 4 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 31/31] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:10:01 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 32/32] 68.13.144.194 () {40 vars in 719 bytes} [Wed Aug 28 13:10:18 2013] GET / => generated 13632 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 33/33] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:10:19 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 34/34] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:10:19 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 25, in home
+    'match': matchobj,
+NameError: global name 'matchobj' is not defined
+[pid: 1276|app: 0|req: 35/35] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:11:14 2013] POST / => generated 8569 bytes in 1102 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 25, in home
+    'match': matchobj,
+NameError: global name 'matchobj' is not defined
+[pid: 1276|app: 0|req: 36/36] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:11:28 2013] POST / => generated 8569 bytes in 816 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 19, in home
+    product = amazon_utils.get_or_create_product(code)
+  File "./products/amazon_utils.py", line 12, in get_or_create_product
+    product.save()
+  File "./products/models.py", line 32, in save
+    super(Product, self).save(*args, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/query.py", line 1675, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 56, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 54, in execute
+    return self.cursor.execute(query, args)
+IntegrityError: null value in column "ean" violates not-null constraint
+DETAIL:  Failing row contains (26, K81PPB55PT, null, null, null, null, null, null, null, B002LSHO62, null, null, Fox River X-Static Liner Crew socks, http://ecx.images-amazon.com/images/I/31ICJOQoWcL.jpg).
+
+[pid: 1276|app: 0|req: 37/37] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:11:51 2013] POST / => generated 10661 bytes in 379 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 25, in home
+    'match': matchobj,
+NameError: global name 'matchobj' is not defined
+[pid: 1276|app: 0|req: 38/38] 68.13.144.194 () {48 vars in 840 bytes} [Wed Aug 28 13:12:41 2013] POST / => generated 8568 bytes in 1001 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 39/39] 68.13.144.194 () {42 vars in 831 bytes} [Wed Aug 28 13:13:00 2013] GET /admin/products/ => generated 2960 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 40/40] 68.13.144.194 () {42 vars in 835 bytes} [Wed Aug 28 13:13:01 2013] GET /admin/products/barcode/ => generated 8698 bytes in 44 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 41/41] 68.13.144.194 () {40 vars in 708 bytes} [Wed Aug 28 13:13:02 2013] GET /admin/jsi18n/ => generated 5169 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 42/42] 66.249.73.81 () {36 vars in 505 bytes} [Wed Aug 28 13:13:15 2013] GET /blog.html => generated 2029 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 25, in home
+    'match': matchobj,
+NameError: global name 'matchobj' is not defined
+[pid: 1276|app: 0|req: 43/43] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:13:37 2013] POST / => generated 8569 bytes in 865 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 44/44] 68.13.144.194 () {44 vars in 866 bytes} [Wed Aug 28 13:13:40 2013] GET /admin/products/barcode/ => generated 8903 bytes in 42 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1276|app: 0|req: 45/45] 68.13.144.194 () {42 vars in 739 bytes} [Wed Aug 28 13:13:40 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 1276)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:14:04 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 85311 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 85311)
+spawned uWSGI worker 1 (pid: 1537, cores: 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 25, in home
+    'match': matchobj,
+NameError: global name 'matchobj' is not defined
+[pid: 1537|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:14:05 2013] POST / => generated 8569 bytes in 1196 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 1537|app: 0|req: 2/2] 68.13.144.194 () {44 vars in 866 bytes} [Wed Aug 28 13:14:20 2013] GET /admin/products/barcode/ => generated 9108 bytes in 55 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1537|app: 0|req: 3/3] 68.13.144.194 () {42 vars in 738 bytes} [Wed Aug 28 13:14:20 2013] GET /admin/jsi18n/ => generated 5169 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1537|app: 0|req: 4/4] 68.13.144.194 () {40 vars in 794 bytes} [Wed Aug 28 13:14:22 2013] GET /admin/products/barcode/32/ => generated 6326 bytes in 37 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1537|app: 0|req: 5/5] 68.13.144.194 () {40 vars in 711 bytes} [Wed Aug 28 13:14:22 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+Wed Aug 28 13:16:13 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:16:25 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 1583 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1583)
+spawned uWSGI worker 1 (pid: 1584, cores: 1)
+Wed Aug 28 13:16:50 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:17:45 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 1615 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1615)
+spawned uWSGI worker 1 (pid: 1616, cores: 1)
+[pid: 1616|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:17:53 2013] POST / => generated 592 bytes in 1543 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 2/2] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:18:56 2013] GET / => generated 13632 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 3/3] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:18:57 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 4/4] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:18:57 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 5/5] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:19:10 2013] POST / => generated 621 bytes in 2595 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 6/6] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:20:37 2013] GET / => generated 14880 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 7/7] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:20:37 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 8/8] 68.13.144.194 () {42 vars in 774 bytes} [Wed Aug 28 13:20:37 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 9/9] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:20:43 2013] GET / => generated 14881 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 10/10] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:20:44 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 11/11] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:20:44 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 12/12] 68.13.144.194 () {40 vars in 719 bytes} [Wed Aug 28 13:21:01 2013] GET / => generated 13647 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 13/13] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:21:01 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 14/14] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:21:01 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 19, in home
+    product = amazon_utils.get_or_create_product(code)
+  File "./products/amazon_utils.py", line 12, in get_or_create_product
+    product.save()
+  File "./products/models.py", line 32, in save
+    super(Product, self).save(*args, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/query.py", line 1675, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 56, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 54, in execute
+    return self.cursor.execute(query, args)
+IntegrityError: null value in column "ean" violates not-null constraint
+DETAIL:  Failing row contains (31, FY7E78FW1X, null, null, null, null, null, null, null, B002HQAYSS, null, null, Lipton Black Tea Bags, Cold Brew, 22 ct, http://ecx.images-amazon.com/images/I/21vSrylmznL.jpg).
+
+[pid: 1616|app: 0|req: 15/15] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:21:12 2013] POST / => generated 10669 bytes in 326 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 16/16] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:21:45 2013] GET / => generated 13635 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 17/17] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:21:46 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 18/18] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:21:46 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 19/19] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:22:09 2013] GET / => generated 13569 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 20/20] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:22:09 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 21/21] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:22:09 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 22/22] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:22:16 2013] GET / => generated 13569 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 23/23] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:22:16 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 24/24] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:22:16 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 25/25] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:22:37 2013] GET / => generated 13620 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 26/26] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:22:37 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 27/27] 68.13.144.194 () {42 vars in 774 bytes} [Wed Aug 28 13:22:37 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 28/28] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:22:45 2013] GET / => generated 13615 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 29/29] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:22:45 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 30/30] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:22:45 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 31/31] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:22:52 2013] GET / => generated 13635 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 32/32] 68.13.144.194 () {42 vars in 774 bytes} [Wed Aug 28 13:22:53 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 33/33] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:22:53 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 34/34] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:23:13 2013] GET / => generated 13588 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 35/35] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:23:13 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 36/36] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:23:13 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 37/37] 66.249.73.81 () {36 vars in 505 bytes} [Wed Aug 28 13:23:17 2013] GET /post.html => generated 2029 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 38/38] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:23:32 2013] POST / => generated 627 bytes in 147 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 39/39] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:23:54 2013] POST / => generated 594 bytes in 2364 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 40/40] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:24:18 2013] POST / => generated 599 bytes in 149 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 41/41] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:24:31 2013] POST / => generated 597 bytes in 147 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 42/42] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:24:54 2013] POST / => generated 601 bytes in 146 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 43/43] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:25:12 2013] POST / => generated 575 bytes in 146 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 44/44] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:26:20 2013] GET / => generated 11210 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 45/45] 68.13.144.194 () {42 vars in 774 bytes} [Wed Aug 28 13:26:20 2013] GET /images/assets/people6-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 46/46] 68.13.144.194 () {42 vars in 775 bytes} [Wed Aug 28 13:26:20 2013] GET /images/assets/people9-600x400.jpeg => generated 2104 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 47/47] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:26:59 2013] GET / => generated 7484 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 48/48] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:27:44 2013] GET / => generated 7505 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 49/49] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:28:03 2013] GET / => generated 7579 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 50/50] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:29:15 2013] GET / => generated 7255 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 51/51] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:30:04 2013] GET / => generated 7153 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 52/52] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:30:30 2013] GET / => generated 5872 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1616|app: 0|req: 53/53] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:31:02 2013] GET / => generated 5872 bytes in 3 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 1616)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:31:39 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x802d9f0c0 pid: 1615 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1615)
+spawned uWSGI worker 1 (pid: 1757, cores: 1)
+[pid: 1757|app: 0|req: 1/1] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:31:42 2013] GET / => generated 5872 bytes in 134 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1757|app: 0|req: 2/2] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:31:53 2013] GET / => generated 5872 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 16, in home
+    code = productform.cleaned_data['ASIN']
+KeyError: 'ASIN'
+[pid: 1757|app: 0|req: 3/3] 68.13.144.194 () {48 vars in 841 bytes} [Wed Aug 28 13:32:11 2013] POST / => generated 8497 bytes in 26 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+Wed Aug 28 13:32:22 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:32:26 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 1785 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1785)
+spawned uWSGI worker 1 (pid: 1786, cores: 1)
+[pid: 1786|app: 0|req: 1/1] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:32:28 2013] GET / => generated 5872 bytes in 130 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+DAMN ! worker 1 (pid: 1786) died, killed by signal 9 :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 1796)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 1796)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:33:03 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 1785 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1785)
+spawned uWSGI worker 1 (pid: 1823, cores: 1)
+[pid: 1823|app: 0|req: 1/1] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:33:04 2013] GET / => generated 5872 bytes in 125 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+Wed Aug 28 13:33:09 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 13:35:07 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 1968 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 1968)
+spawned uWSGI worker 1 (pid: 1969, cores: 1)
+[pid: 1969|app: 0|req: 1/1] 66.249.85.81 () {32 vars in 392 bytes} [Wed Aug 28 13:36:53 2013] GET / => generated 5872 bytes in 169 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 2/2] 68.13.144.194 () {40 vars in 720 bytes} [Wed Aug 28 13:37:30 2013] GET / => generated 6287 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 3/3] 66.249.85.81 () {34 vars in 554 bytes} [Wed Aug 28 13:39:03 2013] GET / => generated 6287 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 4/4] 66.249.73.81 () {38 vars in 542 bytes} [Wed Aug 28 13:39:18 2013] GET / => generated 6287 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 5/5] 66.249.73.81 () {38 vars in 542 bytes} [Wed Aug 28 13:39:33 2013] GET / => generated 6287 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 6/6] 68.13.144.194 () {40 vars in 752 bytes} [Wed Aug 28 13:41:02 2013] GET / => generated 6306 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 19, in home
+    product = amazon_utils.get_or_create_product(code)
+  File "./products/amazon_utils.py", line 12, in get_or_create_product
+    product.save()
+  File "./products/models.py", line 32, in save
+    super(Product, self).save(*args, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/query.py", line 1675, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 56, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 54, in execute
+    return self.cursor.execute(query, args)
+IntegrityError: null value in column "upc" violates not-null constraint
+DETAIL:  Failing row contains (35, 3OO2SSCUNN, 5050053303752, null, null, null, null, null, null, B003L1ZYYM, null, null, AmazonBasics High-Speed HDMI Cable (6.5 Feet/2.0 Meters) - Suppo..., http://ecx.images-amazon.com/images/I/417qWBWXqYL.jpg).
+
+[pid: 1969|app: 0|req: 7/7] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 13:41:40 2013] POST / => generated 10810 bytes in 347 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 8/8] 66.249.73.81 () {36 vars in 507 bytes} [Wed Aug 28 13:43:54 2013] GET /login.html => generated 2032 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 9/9] 68.13.144.194 () {40 vars in 752 bytes} [Wed Aug 28 13:47:56 2013] GET / => generated 11666 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 10/10] 68.13.144.194 () {40 vars in 752 bytes} [Wed Aug 28 13:48:51 2013] GET / => generated 11680 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 11/11] 68.13.144.194 () {40 vars in 752 bytes} [Wed Aug 28 13:51:27 2013] GET / => generated 11362 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 12/12] 66.87.143.248 () {40 vars in 707 bytes} [Wed Aug 28 13:52:37 2013] GET / => generated 11362 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 13/13] 204.194.141.29 () {42 vars in 711 bytes} [Wed Aug 28 13:52:39 2013] GET / => generated 11362 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 14/14] 66.249.73.81 () {36 vars in 511 bytes} [Wed Aug 28 13:54:17 2013] GET /pricing.html => generated 2038 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 15/15] 66.249.73.81 () {36 vars in 507 bytes} [Wed Aug 28 13:54:19 2013] GET /about.html => generated 2032 bytes in 3 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 16/16] 68.13.144.194 () {40 vars in 751 bytes} [Wed Aug 28 14:02:06 2013] GET / => generated 8513 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 17/17] 66.249.73.81 () {36 vars in 513 bytes} [Wed Aug 28 14:03:51 2013] GET /services.html => generated 2041 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 18/18] 66.249.73.81 () {36 vars in 511 bytes} [Wed Aug 28 14:03:58 2013] GET /contact.html => generated 2038 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 19/19] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 14:05:23 2013] POST / => generated 558 bytes in 2114 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 20/20] 68.13.144.194 () {40 vars in 803 bytes} [Wed Aug 28 14:10:07 2013] GET /admin/products/ => generated 2960 bytes in 34 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 21/21] 68.13.144.194 () {40 vars in 819 bytes} [Wed Aug 28 14:10:09 2013] GET /admin/products/barcodetype/ => generated 4242 bytes in 35 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 22/22] 68.13.144.194 () {40 vars in 743 bytes} [Wed Aug 28 14:10:09 2013] GET /admin/jsi18n/ => generated 5169 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 23/23] 68.13.144.194 () {40 vars in 835 bytes} [Wed Aug 28 14:10:11 2013] GET /admin/products/barcodetype/2/ => generated 3468 bytes in 31 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 24/24] 68.13.144.194 () {40 vars in 745 bytes} [Wed Aug 28 14:10:11 2013] GET /admin/jsi18n/ => generated 5169 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 1969|app: 0|req: 25/25] 68.13.144.194 () {40 vars in 820 bytes} [Wed Aug 28 14:10:12 2013] GET /admin/products/barcodetype/ => generated 4242 bytes in 32 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 1969)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 14:10:51 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 1968 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 1968)
+spawned uWSGI worker 1 (pid: 5660, cores: 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 24, in home
+    'barcode': barcode,
+NameError: global name 'barcode' is not defined
+[pid: 5660|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 14:11:03 2013] POST / => generated 8635 bytes in 313 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+Wed Aug 28 14:11:18 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 14:40:24 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 9446 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 9446)
+spawned uWSGI worker 1 (pid: 9447, cores: 1)
+[pid: 9447|app: 0|req: 1/1] 68.13.144.194 () {38 vars in 731 bytes} [Wed Aug 28 14:43:15 2013] GET /admin => generated 0 bytes in 115 msecs (HTTP/1.1 301) 2 headers in 106 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 2/2] 68.13.144.194 () {38 vars in 733 bytes} [Wed Aug 28 14:43:15 2013] GET /admin/ => generated 6928 bytes in 60 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 3/3] 68.13.144.194 () {40 vars in 811 bytes} [Wed Aug 28 14:43:33 2013] GET /admin/products/barcodetype/ => generated 4242 bytes in 39 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 4/4] 68.13.144.194 () {40 vars in 744 bytes} [Wed Aug 28 14:43:33 2013] GET /admin/jsi18n/ => generated 5169 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 5/5] 68.13.144.194 () {40 vars in 840 bytes} [Wed Aug 28 14:43:34 2013] GET /admin/products/barcodetype/add/ => generated 3283 bytes in 30 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 6/6] 68.13.144.194 () {40 vars in 748 bytes} [Wed Aug 28 14:43:34 2013] GET /admin/jsi18n/ => generated 5169 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 7/7] 68.13.144.194 () {48 vars in 1090 bytes} [Wed Aug 28 14:43:43 2013] POST /admin/products/barcodetype/add/ => generated 0 bytes in 11 msecs (HTTP/1.1 302) 7 headers in 468 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 8/8] 68.13.144.194 () {42 vars in 1077 bytes} [Wed Aug 28 14:43:43 2013] GET /admin/products/barcodetype/add/ => generated 3483 bytes in 29 msecs (HTTP/1.1 200) 7 headers in 389 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 9/9] 68.13.144.194 () {42 vars in 779 bytes} [Wed Aug 28 14:43:43 2013] GET /admin/jsi18n/ => generated 5169 bytes in 9 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 9447|app: 0|req: 10/10] 66.249.73.81 () {36 vars in 525 bytes} [Wed Aug 28 14:44:01 2013] GET /portfolio-item.html => generated 2059 bytes in 2 msecs (HTTP/1.1 404) 1 headers in 51 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 9447)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 14:46:51 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 9446 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 9446)
+spawned uWSGI worker 1 (pid: 10120, cores: 1)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 22, in home
+    qrcode = product.generate_barcode(type='qrcode')
+  File "./products/models.py", line 52, in generate_barcode
+    barcode.save(fp, format='PNG')
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/PIL/Image.py", line 1420, in save
+    self.load()
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/PIL/EpsImagePlugin.py", line 311, in load
+    self.im = Ghostscript(self.tile, self.size, self.fp)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/PIL/EpsImagePlugin.py", line 96, in Ghostscript
+    raise IOError("gs failed (status %d)" % status)
+IOError: gs failed (status 256)
+[pid: 10120|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 14:46:55 2013] POST / => generated 9123 bytes in 1114 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+Wed Aug 28 14:47:01 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 15:01:30 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 11851 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 11851)
+spawned uWSGI worker 1 (pid: 11852, cores: 1)
+[pid: 11852|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 15:01:33 2013] POST / => generated 1051 bytes in 1030 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 11852|app: 0|req: 2/2] 68.13.144.194 () {40 vars in 752 bytes} [Wed Aug 28 15:02:19 2013] GET / => generated 8347 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 11852|app: 0|req: 3/3] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 15:02:32 2013] POST / => generated 1050 bytes in 2631 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 11852)...
+binary reloading uWSGI...
+chdir() to /usr/home/derek/onemgin/onemgin
+closing all non-uwsgi socket fds > 2 (max_fd = 11095)...
+found fd 3 mapped to socket 0 (127.0.0.1:8802)
+running /usr/local/bin/uwsgi
+*** Starting uWSGI 1.4.5 (64bit) on [Wed Aug 28 15:03:59 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 inherited INET address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d9f0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d9f0c0 pid: 11851 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 11851)
+spawned uWSGI worker 1 (pid: 12012, cores: 1)
+[pid: 12012|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 15:04:26 2013] POST / => generated 1047 bytes in 3406 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 2/2] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 15:05:50 2013] POST / => generated 1141 bytes in 3456 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 3/3] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 15:06:18 2013] POST / => generated 1147 bytes in 819 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 4/4] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 15:06:39 2013] POST / => generated 1145 bytes in 970 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 5/5] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 15:17:52 2013] POST / => generated 1127 bytes in 3033 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 6/6] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 16:03:28 2013] POST / => generated 1129 bytes in 3216 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 7/7] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 16:04:10 2013] POST / => generated 1110 bytes in 3128 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 8/8] 68.13.144.194 () {48 vars in 873 bytes} [Wed Aug 28 16:12:49 2013] POST / => generated 1142 bytes in 3035 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 9/9] 68.13.144.194 () {40 vars in 752 bytes} [Wed Aug 28 16:15:57 2013] GET / => generated 8971 bytes in 5 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 10/10] 68.13.144.194 () {40 vars in 751 bytes} [Wed Aug 28 16:16:23 2013] GET / => generated 8971 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 11/11] 68.13.144.194 () {40 vars in 752 bytes} [Wed Aug 28 16:17:27 2013] GET / => generated 9002 bytes in 6 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 12012|app: 0|req: 12/12] 68.13.144.194 () {40 vars in 752 bytes} [Wed Aug 28 16:18:36 2013] GET / => generated 9004 bytes in 4 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)

@@ -1,0 +1,13 @@
+SITE_DIR = '/usr/home/derek/onemgin/onemgin'
+import site
+site.addsitedir(SITE_DIR)
+import os
+import sys
+
+sys.path.append(SITE_DIR)
+sys.path.append('/usr/local/bin')
+os.environ['DJANGO_SETTINGS_MODULE'] = 'onemgin.settings'
+
+import django.core.handlers.wsgi
+
+application = django.core.handlers.wsgi.WSGIHandler()
