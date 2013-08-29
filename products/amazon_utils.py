@@ -2,6 +2,17 @@ from amazon.api import AmazonAPI
 from django.conf import settings
 from products.models import Product
 
+def process_browse_node(browse_node_list):
+    """Processes browse node list
+
+    Used to create and fetch the category ID for a product's browse node
+
+    :return:
+        An instance of :class:`products.Category` representing the most
+        specific category.
+    """
+    pass
+
 def get_or_create_product(asin):
     amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
     az = amazon.lookup(ItemId=asin)
@@ -17,7 +28,8 @@ def get_or_create_product(asin):
     product.manufacturer = az.get_attribute('Manufacturer')
     product.brand = az.get_attribute('Brand')
     product.model_number = az.get_attribute('Model')
-    product.mpn = az.get_attribute('MPN')
+    product.mpn = az.mpn
+    product.part_number = az.part_number
     product.sku = az.sku
     product.isbn = az.isbn
     product.length = az.get_attribute('ItemDimensions.Length')
@@ -26,5 +38,7 @@ def get_or_create_product(asin):
     product.weight = az.get_attribute('ItemDimensions.Weight')
     product.save()
         
-    return product  
+    return product
+
+
     

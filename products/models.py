@@ -27,6 +27,7 @@ class Product(models.Model):
     brand = models.CharField(max_length=128, null=True)
     manufacturer = models.CharField(max_length=128, null=True)
     mpn = models.CharField(max_length=32, null=True)
+    part_number = models.CharField(max_length=32, null=True)
     sku = models.CharField(max_length=32, null=True)
     model_number = models.CharField(max_length=64, null=True)
     length = models.IntegerField(null=True)
