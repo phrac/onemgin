@@ -2919,3 +2919,77 @@ no ean
 [pid: 46884|app: 0|req: 51/51] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:46:57 2013] POST / => generated 1163 bytes in 4879 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
 [pid: 46884|app: 0|req: 52/52] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:47:05 2013] POST / => generated 1106 bytes in 5794 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
 Thu Aug 29 15:47:28 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.4.5 (64bit) on [Thu Aug 29 16:48:57 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 55760 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 55760)
+spawned uWSGI worker 1 (pid: 55761, cores: 1)
+[pid: 55761|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:49:04 2013] POST / => generated 1098 bytes in 1593 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55761|app: 0|req: 2/2] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:49:08 2013] POST / => generated 1124 bytes in 6604 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55761|app: 0|req: 3/3] 68.13.144.194 () {40 vars in 748 bytes} [Thu Aug 29 16:49:17 2013] GET / => generated 14324 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 55761|app: 0|req: 4/4] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:49:22 2013] POST / => generated 1116 bytes in 6573 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+DAMN ! worker 1 (pid: 55761) died :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 55956)
+[pid: 55956|app: 0|req: 6/5] 68.13.144.194 () {40 vars in 748 bytes} [Thu Aug 29 16:50:40 2013] GET / => generated 14323 bytes in 196 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 7/6] 68.13.144.194 () {40 vars in 747 bytes} [Thu Aug 29 16:50:40 2013] GET / => generated 14323 bytes in 26 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 8/7] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:50:44 2013] POST / => generated 1124 bytes in 5904 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 9/8] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:50:53 2013] POST / => generated 1129 bytes in 5671 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 10/9] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:51:01 2013] POST / => generated 1161 bytes in 6454 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 11/10] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:51:13 2013] POST / => generated 1115 bytes in 6617 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 12/11] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:51:23 2013] POST / => generated 1108 bytes in 6448 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 13/12] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:51:32 2013] POST / => generated 1155 bytes in 6027 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 14/13] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:51:41 2013] POST / => generated 1141 bytes in 5309 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 15/14] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:51:48 2013] POST / => generated 1117 bytes in 4755 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 16/15] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:51:55 2013] POST / => generated 1124 bytes in 7058 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 17/16] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:52:04 2013] POST / => generated 1149 bytes in 6355 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 18/17] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:52:14 2013] POST / => generated 1119 bytes in 6912 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 19/18] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:52:25 2013] POST / => generated 1107 bytes in 7062 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 20/19] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:52:35 2013] POST / => generated 1163 bytes in 6205 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 21/20] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:52:45 2013] POST / => generated 1158 bytes in 6540 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 22/21] 68.13.144.194 () {40 vars in 748 bytes} [Thu Aug 29 16:52:53 2013] GET / => generated 14369 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 55956|app: 0|req: 23/22] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:53:08 2013] POST / => generated 1132 bytes in 6800 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+DAMN ! worker 1 (pid: 55956) died :( trying respawn ...
+Respawned uWSGI worker 1 (new pid: 56323)
+[pid: 56323|app: 0|req: 25/23] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:53:55 2013] POST / => generated 1127 bytes in 6292 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 56323|app: 0|req: 26/24] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 16:54:03 2013] POST / => generated 1167 bytes in 8533 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 56323|app: 0|req: 27/25] 68.13.144.194 () {40 vars in 748 bytes} [Thu Aug 29 17:03:31 2013] GET / => generated 14423 bytes in 31 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 56323|app: 0|req: 28/26] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 17:03:41 2013] POST / => generated 1130 bytes in 1927 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 56323|app: 0|req: 29/27] 68.13.144.194 () {48 vars in 869 bytes} [Thu Aug 29 17:17:55 2013] POST / => generated 1128 bytes in 8698 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+*** Starting uWSGI 1.4.5 (64bit) on [Thu Aug 29 17:26:53 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+probably another instance of uWSGI is running on the same address (127.0.0.1:8802).
+bind(): Address already in use [core/socket.c line 628]
+Thu Aug 29 17:27:08 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!

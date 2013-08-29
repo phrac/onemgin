@@ -9,7 +9,10 @@ class Command(BaseCommand):
     
     def handle(self, *args, **options):
         pkl = open(settings.PRODUCT_PICKLE_FILE, 'r+')
-        words = pickle.load(pkl)
+        try:
+            words = pickle.load(pkl)
+        except:
+            words = []
         words.append(args[0])
         pickle.dump(words, pkl)
         pkl.close()
