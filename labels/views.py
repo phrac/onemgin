@@ -6,10 +6,12 @@ import urllib, cStringIO
 import re
 
 from products import amazon_utils
+from products.models import Product
 from products.forms import ProductForm
 
 
 def home(request):
+    recents = Product.objects.all().order_by('-created')[:6]
     if request.method == 'POST':
         productform = ProductForm(request.POST)
         if productform.is_valid():
@@ -26,6 +28,7 @@ def home(request):
                                          'ean': ean,
                                          'upc': upc,
                                          'qrcode': qrcode,
+                                         
                                         },
                                         context_instance=RequestContext(request))
     
@@ -34,6 +37,7 @@ def home(request):
     return render_to_response('labels/home.html',
                               {
                                   'product_form': productform,
+                                  'recents': recents,
                               },
                               context_instance = RequestContext(request))
     

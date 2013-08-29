@@ -30,13 +30,14 @@ class Product(models.Model):
     part_number = models.CharField(max_length=32, null=True)
     sku = models.CharField(max_length=32, null=True)
     model_number = models.CharField(max_length=64, null=True)
-    length = models.IntegerField(null=True)
-    width = models.IntegerField(null=True)
-    height = models.IntegerField(null=True)
-    weight = models.IntegerField(null=True)
+    length = models.FloatField(null=True)
+    width = models.FloatField(null=True)
+    height = models.FloatField(null=True)
+    weight = models.FloatField(null=True)
     description = models.CharField(max_length=512, null=True)
     image_url = models.CharField(max_length=512, null=True)
     amazon_url = models.URLField(null=True)
+    created = models.DateTimeField(auto_now_add=True, null=True)
 
 
     def save(self, *args, **kwargs):

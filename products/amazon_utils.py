@@ -1,6 +1,7 @@
 from amazon.api import AmazonAPI
 from django.conf import settings
 from products.models import Product
+from sorl.thumbnail import get_thumbnail
 
 def process_browse_node(browse_node_list):
     """Processes browse node list
@@ -37,6 +38,8 @@ def get_or_create_product(asin):
     product.height = az.get_attribute('ItemDimensions.Height')
     product.weight = az.get_attribute('ItemDimensions.Weight')
     product.save()
+    get_thumbnail(product.image_url, '600x400', crop='center')
+
         
     return product
 
