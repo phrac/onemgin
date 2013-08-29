@@ -2,6 +2,8 @@ from amazon.api import AmazonAPI
 from django.conf import settings
 from products.models import Product
 from sorl.thumbnail import get_thumbnail
+from random import choice, randint
+import pickle
 
 def process_browse_node(browse_node_list):
     """Processes browse node list
@@ -13,6 +15,22 @@ def process_browse_node(browse_node_list):
         specific category.
     """
     pass
+
+def random_product():
+    pkl = open(settings.PRODUCT_PICKLE_FILE, 'rb')
+    words = pickle.load(pkl)
+    pkl.close()
+    word = choice(words)
+    amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
+    products = amazon.search_n(20, Keywords="%s" % word, SearchIndex='All')
+    count = len(products)
+    product = products[randint(0,count-1)]
+    valid = None
+    while not valid:
+        product = products[randint(0,count-1)]
+        if product.ean and product.upc:
+            valid = 1
+    return product.asin
 
 def get_or_create_product(asin):
     amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
@@ -38,7 +56,8 @@ def get_or_create_product(asin):
     product.height = az.get_attribute('ItemDimensions.Height')
     product.weight = az.get_attribute('ItemDimensions.Weight')
     product.save()
-    get_thumbnail(product.image_url, '600x400', crop='center')
+    if product.image_url:
+        get_thumbnail(product.image_url, '600x400', crop='center')
 
         
     return product

@@ -68,7 +68,7 @@
     <ul class="thumbnails bordered thumbnail-list">
     {% for product in recents %}
       <li class="span4 filter-people">
-        <a href="{{ product.amazon_url }}">
+        <a rel="nofollow" href="{{ product.amazon_url }}">
           <figure class="thumbnail-figure">
             {% if product.image_url %}
             {% thumbnail product.image_url "600x400" crop="center" as im %}

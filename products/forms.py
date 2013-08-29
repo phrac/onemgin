@@ -1,4 +1,4 @@
 from django import forms
 
 class ProductForm(forms.Form):
-    ASIN = forms.CharField()
+    ASIN = forms.CharField(required=False)

@@ -11,7 +11,7 @@ from products.forms import ProductForm
 
 
 def home(request):
-    recents = Product.objects.all().order_by('-created')[:6]
+    recents = Product.objects.filter(image_url__isnull=False).order_by('-created')[:6]
     if request.method == 'POST':
         productform = ProductForm(request.POST)
         if productform.is_valid():
@@ -19,18 +19,21 @@ def home(request):
             asin = re.compile("^B\d{2}\w{7}|\d{9}(X|\d)$")
             if asin.match(code):
                 product = amazon_utils.get_or_create_product(code)
-                ean = product.generate_barcode(type='ean13')
-                upc = product.generate_barcode(type='upca')
-                qrcode = product.generate_barcode(type='qrcode', text=False)
-                return render_to_response('labels/generator_output.html', 
-                                        {
-                                         'product': product,
-                                         'ean': ean,
-                                         'upc': upc,
-                                         'qrcode': qrcode,
-                                         
-                                        },
-                                        context_instance=RequestContext(request))
+            else:
+                asin = amazon_utils.random_product()
+                product = amazon_utils.get_or_create_product(asin)
+            ean = product.generate_barcode(type='ean13')
+            upc = product.generate_barcode(type='upca')
+            qrcode = product.generate_barcode(type='qrcode', text=False)
+            return render_to_response('labels/generator_output.html', 
+                                    {
+                                     'product': product,
+                                     'ean': ean,
+                                     'upc': upc,
+                                     'qrcode': qrcode,
+                                     
+                                    },
+                                    context_instance=RequestContext(request))
     
     else:
         productform = ProductForm()

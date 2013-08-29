@@ -2714,3 +2714,208 @@ DETAIL:  Failing row contains (93, CNHHMUQLEZ, null, null, null, null, null, nul
 
 [pid: 8691|app: 0|req: 43/43] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 10:50:55 2013] POST / => generated 11060 bytes in 358 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
 Thu Aug 29 10:51:20 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 1.4.5 (64bit) on [Thu Aug 29 14:52:20 2013] ***
+compiled with version: 4.2.1 20070831 patched [FreeBSD] on 21 February 2013 19:22:55
+os: FreeBSD-9.1-RELEASE FreeBSD 9.1-RELEASE #0 r243825: Tue Dec  4 09:23:10 UTC 2012     root@farrell.cse.buffalo.edu:/usr/obj/usr/src/sys/GENERIC
+nodename: metal.partengine.org
+machine: amd64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 8
+current working directory: /usr/home/derek/onemgin/onemgin
+detected binary path: /usr/local/bin/uwsgi
+your processes number limit is 5547
+your memory page size is 4096 bytes
+detected max file descriptor number: 11095
+lock engine: POSIX semaphores
+uwsgi socket 0 bound to TCP address 127.0.0.1:8802 fd 3
+Python version: 2.7.3 (default, Feb 21 2013, 18:52:44)  [GCC 4.2.1 20070831 patched [FreeBSD]]
+Set PythonHome to /usr/home/derek/onemgin
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x802d3e0c0
+your server socket listen backlog is limited to 100 connections
+mapped 144832 bytes (141 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x802d3e0c0 pid: 46883 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 46883)
+spawned uWSGI worker 1 (pid: 46884, cores: 1)
+[pid: 46884|app: 0|req: 1/1] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 14:52:29 2013] POST / => generated 1145 bytes in 5990 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 2/2] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 14:52:41 2013] POST / => generated 1151 bytes in 5741 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 3/3] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 14:52:50 2013] POST / => generated 1136 bytes in 1550 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 4/4] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 14:59:21 2013] POST / => generated 1146 bytes in 6303 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 5/5] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 14:59:30 2013] POST / => generated 1120 bytes in 6422 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 6/6] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:13:34 2013] POST / => generated 1106 bytes in 6493 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 7/7] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:13:43 2013] POST / => generated 1138 bytes in 6526 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 8/8] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:13:54 2013] POST / => generated 1133 bytes in 8034 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 9/9] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:19:10 2013] POST / => generated 1135 bytes in 10279 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 10/10] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:19:23 2013] POST / => generated 1145 bytes in 6090 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 11/11] 68.13.144.194 () {40 vars in 752 bytes} [Thu Aug 29 15:19:40 2013] GET / => generated 14304 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 12/12] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:19:51 2013] POST / => generated 1159 bytes in 5548 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 13/13] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:20:01 2013] POST / => generated 1154 bytes in 5864 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 14/14] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:21:01 2013] POST / => generated 1161 bytes in 8236 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 15/15] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:21:15 2013] POST / => generated 1157 bytes in 6060 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 16/16] 68.13.144.194 () {40 vars in 752 bytes} [Thu Aug 29 15:21:23 2013] GET / => generated 14492 bytes in 28 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 68.13.144.194) !!!
+[pid: 46884|app: 0|req: 17/17] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:21:47 2013] POST / => generated 1121 bytes in 6804 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 18/18] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:23:22 2013] POST / => generated 1121 bytes in 322 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 19/19] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:23:27 2013] POST / => generated 1163 bytes in 7052 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 20/20] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:23:40 2013] POST / => generated 1141 bytes in 6712 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 24, in home
+    product = amazon_utils.get_or_create_product(asin)
+  File "./products/amazon_utils.py", line 57, in get_or_create_product
+    get_thumbnail(product.image_url, '600x400', crop='center')
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/sorl/thumbnail/shortcuts.py", line 8, in get_thumbnail
+    return default.backend.get_thumbnail(file_, geometry_string, **options)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/sorl/thumbnail/base.py", line 38, in get_thumbnail
+    source = ImageFile(file_)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/sorl/thumbnail/images.py", line 72, in __init__
+    raise ThumbnailError('File is empty.')
+ThumbnailError: File is empty.
+[pid: 46884|app: 0|req: 21/21] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:24:19 2013] POST / => generated 9241 bytes in 1984 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 22/22] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:24:23 2013] POST / => generated 1139 bytes in 5613 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 23/23] 68.13.144.194 () {40 vars in 752 bytes} [Thu Aug 29 15:24:34 2013] GET / => generated 14496 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 24/24] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:24:42 2013] POST / => generated 1132 bytes in 5549 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 25/25] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:29:41 2013] POST / => generated 1153 bytes in 5382 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 26/26] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:30:08 2013] POST / => generated 1122 bytes in 7109 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 27/27] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:30:45 2013] POST / => generated 1123 bytes in 7966 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+no ean
+no ean
+[pid: 46884|app: 0|req: 28/28] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:30:58 2013] POST / => generated 1136 bytes in 6404 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 29/29] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:31:09 2013] POST / => generated 1132 bytes in 6146 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 30/30] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:38:25 2013] POST / => generated 1155 bytes in 8344 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+no ean
+no ean
+[pid: 46884|app: 0|req: 31/31] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:38:37 2013] POST / => generated 1149 bytes in 6004 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 32/32] 68.13.144.194 () {40 vars in 752 bytes} [Thu Aug 29 15:38:44 2013] GET / => generated 14374 bytes in 27 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 33/33] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:42:52 2013] POST / => generated 1146 bytes in 6541 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 34/34] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:43:01 2013] POST / => generated 1129 bytes in 6895 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 24, in home
+    product = amazon_utils.get_or_create_product(asin)
+  File "./products/amazon_utils.py", line 56, in get_or_create_product
+    product.save()
+  File "./products/models.py", line 45, in save
+    super(Product, self).save(*args, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/query.py", line 1675, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 56, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 54, in execute
+    return self.cursor.execute(query, args)
+IntegrityError: null value in column "upc" violates not-null constraint
+DETAIL:  Failing row contains (192, 8296RFLS68, 9789810801557, null, null, null, null, null, null, 9810801556, null, Monsoon Books Pte. Ltd., Unhooking a DD Bra without Fumbling, http://ecx.images-amazon.com/images/I/517SzDMKOyL.jpg, http://www.amazon.com/dp/9810801556/?tag=onemg-20, null, null, 59, 492, 760, 55, 9789810801557, null, 2013-08-29 20:44:00.112891+00).
+
+[pid: 46884|app: 0|req: 35/35] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:43:58 2013] POST / => generated 11076 bytes in 1721 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+SIGPIPE: writing to a closed pipe/socket/fd (probably the client disconnected) on request / (ip 68.13.144.194) !!!
+[pid: 46884|app: 0|req: 36/36] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:44:01 2013] POST / => generated 1137 bytes in 6969 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 37/37] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:44:10 2013] POST / => generated 1117 bytes in 5807 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 38/38] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:44:19 2013] POST / => generated 1165 bytes in 6155 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 39/39] 68.13.144.194 () {40 vars in 752 bytes} [Thu Aug 29 15:44:27 2013] GET / => generated 14399 bytes in 35 msecs (HTTP/1.1 200) 3 headers in 195 bytes (1 switches on core 0)
+no ean
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 24, in home
+    product = amazon_utils.get_or_create_product(asin)
+  File "./products/amazon_utils.py", line 56, in get_or_create_product
+    product.save()
+  File "./products/models.py", line 45, in save
+    super(Product, self).save(*args, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/query.py", line 1675, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 56, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 54, in execute
+    return self.cursor.execute(query, args)
+IntegrityError: null value in column "upc" violates not-null constraint
+DETAIL:  Failing row contains (196, B3QM2N20JO, 9780374371319, null, null, null, null, null, null, 0374371318, null, Farrar Straus & Giroux (J), Solomon, the Rusty Nail, http://ecx.images-amazon.com/images/I/21BBD5RZ6XL.jpg, http://www.amazon.com/dp/0374371318/?tag=onemg-20, null, null, null, null, null, null, 6578335, null, 2013-08-29 20:44:33.969278+00).
+
+[pid: 46884|app: 0|req: 40/40] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:44:32 2013] POST / => generated 11058 bytes in 1928 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 41/41] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:44:39 2013] POST / => generated 1159 bytes in 11494 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 42/42] 68.13.144.194 () {42 vars in 859 bytes} [Thu Aug 29 15:44:50 2013] GET /admin/products/ => generated 2960 bytes in 33 msecs (HTTP/1.1 200) 5 headers in 185 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 43/43] 68.13.144.194 () {42 vars in 867 bytes} [Thu Aug 29 15:44:52 2013] GET /admin/products/product/ => generated 31165 bytes in 98 msecs (HTTP/1.1 200) 6 headers in 307 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 44/44] 68.13.144.194 () {40 vars in 740 bytes} [Thu Aug 29 15:44:53 2013] GET /admin/jsi18n/ => generated 5169 bytes in 11 msecs (HTTP/1.1 200) 2 headers in 64 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 45/45] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:44:59 2013] POST / => generated 1158 bytes in 7134 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 24, in home
+    product = amazon_utils.get_or_create_product(asin)
+  File "./products/amazon_utils.py", line 56, in get_or_create_product
+    product.save()
+  File "./products/models.py", line 45, in save
+    super(Product, self).save(*args, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 546, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/base.py", line 650, in save_base
+    result = manager._insert([self], fields=fields, return_id=update_pk, using=using, raw=raw)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/manager.py", line 215, in _insert
+    return insert_query(self.model, objs, fields, **kwargs)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/query.py", line 1675, in insert_query
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/models/sql/compiler.py", line 937, in execute_sql
+    cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/util.py", line 41, in execute
+    return self.cursor.execute(sql, params)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 56, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/db/backends/postgresql_psycopg2/base.py", line 54, in execute
+    return self.cursor.execute(query, args)
+IntegrityError: null value in column "upc" violates not-null constraint
+DETAIL:  Failing row contains (199, BHTQ3LQPWR, 9781593593421, null, null, null, null, null, null, 1593593422, Peter Pauper Press, Peter Pauper Press, Owls i-Clip Magnetic Page Markers (Set of 8 Magnetic Bookmarks), http://ecx.images-amazon.com/images/I/419GskdCoTL.jpg, http://www.amazon.com/dp/1593593422/?tag=onemg-20, 3422, null, null, null, null, null, ACOM-INT_book_usedgood_1593593422, 3422, 2013-08-29 20:45:12.859112+00).
+
+[pid: 46884|app: 0|req: 46/46] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:45:11 2013] POST / => generated 11202 bytes in 1667 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 47/47] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:45:15 2013] POST / => generated 1150 bytes in 5237 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/django/core/handlers/base.py", line 115, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "./labels/views.py", line 24, in home
+    product = amazon_utils.get_or_create_product(asin)
+  File "./products/amazon_utils.py", line 57, in get_or_create_product
+    get_thumbnail(product.image_url, '600x400', crop='center')
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/sorl/thumbnail/shortcuts.py", line 8, in get_thumbnail
+    return default.backend.get_thumbnail(file_, geometry_string, **options)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/sorl/thumbnail/base.py", line 38, in get_thumbnail
+    source = ImageFile(file_)
+  File "/usr/home/derek/onemgin/lib/python2.7/site-packages/sorl/thumbnail/images.py", line 72, in __init__
+    raise ThumbnailError('File is empty.')
+ThumbnailError: File is empty.
+[pid: 46884|app: 0|req: 48/48] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:46:31 2013] POST / => generated 9241 bytes in 1790 msecs (HTTP/1.1 500) 1 headers in 64 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 49/49] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:46:43 2013] POST / => generated 1150 bytes in 6957 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 50/50] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:46:53 2013] POST / => generated 1117 bytes in 1147 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+no ean
+no ean
+[pid: 46884|app: 0|req: 51/51] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:46:57 2013] POST / => generated 1163 bytes in 4879 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+[pid: 46884|app: 0|req: 52/52] 68.13.144.194 () {48 vars in 873 bytes} [Thu Aug 29 15:47:05 2013] POST / => generated 1106 bytes in 5794 msecs (HTTP/1.1 200) 1 headers in 59 bytes (1 switches on core 0)
+Thu Aug 29 15:47:28 2013 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
