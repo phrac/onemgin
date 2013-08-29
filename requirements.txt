@@ -1,6 +1,7 @@
 Django==1.5.2
 PIL==1.1.7
 Pillow==2.1.0
+PyYAML==3.10
 South==0.8.2
 argparse==1.2.1
 boto==2.10.0
@@ -8,6 +9,8 @@ bottlenose==0.5.0
 django-storages==1.1.8
 elaphe==0.5.6
 lxml==3.2.3
+nltk==2.0.4
+numpy==1.7.1
 psycopg2==2.5.1
 python-amazon-simple-product-api==1.4.0
 reportlab==2.7
