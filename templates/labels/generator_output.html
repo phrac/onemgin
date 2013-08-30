@@ -1,11 +1,14 @@
 {% load thumbnail %}
-<h3>{{ product.description|truncatechars:75 }}
+{% if search_term %}
+<p>Searched for "{{ search_term }}"</p>
+{% endif %}
+<p><strong>{{ product.description|truncatechars:100 }}</strong>
 {% if product.image_url %}
 {% thumbnail product.image_url "125x125" as im %}
 <center><img class="thumbnail" src="{{ im.url }}" alt="{{ product.onemg }} image" /></center>
 {% endthumbnail %}
 {% endif %}
-</h3>
+</p>
 
 <center>
     <img src="{{ ean.image.url }}" />

@@ -1,11 +1,9 @@
 from amazon.api import AmazonAPI
 from django.conf import settings
 from products.models import Product
-from words.models import Word, WordType
-from sorl.thumbnail import get_thumbnail
+from words.models import Word
 from random import choice, randint
-import pickle
-from nltk import pos_tag, word_tokenize
+from products.tasks import process_words, generate_thumb
 
 def process_browse_node(browse_node_list):
     """Processes browse node list
@@ -17,45 +15,46 @@ def process_browse_node(browse_node_list):
         specific category.
     """
     pass
+    
+def fetch_random():
+    search_noun = Word.objects.order_by('?')[0]
+    search_adj = Word.objects.exclude(word=search_noun.word).order_by('?')[0]
+    search_term = "%s %s" % (search_adj, search_noun)
+    print search_term
+    amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
+    products = amazon.search_n(5, Keywords="%s" % search_term, SearchIndex='All')
+    return products, search_term
+    
+def validate_product(product):
+    if product.upc and product.ean:
+        return True
+    else:
+        return False
 
 def random_product():
-    noun = WordType.objects.get(type='Noun')
-    adj = WordType.objects.get(type='Adjective')
-    search_noun = Word.objects.filter(type=noun).order_by('?')[0]
-    search_adj = Word.objects.filter(type=adj).order_by('?')[0]
-    word = "%s %s" % (search_adj, search_noun)
-
-    print "Searching %s" % word
-    amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
-    products = amazon.search_n(20, Keywords="%s" % (word), SearchIndex='All')
-    count = len(products)
-    product = products[randint(0,count-1)]
-    valid = None
-    while not valid:
-        product = products[randint(0,count-1)]
-        if product.ean and product.upc:
-            valid = 1
-    
-    wordlist = pos_tag(word_tokenize(product.title.lower()))
-    for w in wordlist:
-        if w[1] == 'NN' or w[1] == 'NNS':
-            print "Appending %s" % w[0]
-            word, created = Word.objects.get_or_create(word=w[0], type=noun)
-        if w[1] == 'JJ':
-            print "Appending adjective %s" % w[0]
-            word, created = Word.objects.get_or_create(word=w[0], type=adj)
-    return product.asin
+    products, search_term = fetch_random()
+    i = 0
+    print len(products)
+    if len(products) == 0:
+        return None, None
+    else:
+        product = products[i]
+    while validate_product(product) is not True:
+        if i > len(products)-1:
+            return None, None
+        product = products[i]
+        i += 1
+    print i
+    return (product.asin, search_term)
 
 def get_or_create_product(asin):
     try:
         product = Product.objects.get(asin=asin)
-        print 'not in db'
     except:
         amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID,
                            settings.AWS_SECRET_ACCESS_KEY,
                            settings.AWS_ASSOCIATE_TAG)                                       
         az = amazon.lookup(ItemId=asin)
-        print 'got product'
         product = Product(asin=asin, upc=az.upc, ean=az.ean, 
                           description=az.title, image_url=az.large_image_url,
                           amazon_url=az.offer_url)
@@ -72,9 +71,7 @@ def get_or_create_product(asin):
         product.height = az.get_attribute('ItemDimensions.Height')
         product.weight = az.get_attribute('ItemDimensions.Weight')
         product.save()
-        print 'product saved'
-        if product.image_url:
-            get_thumbnail(product.image_url, '600x400', crop='center')
+        generate_thumb.delay(product, '600x400')
 
         
     return product

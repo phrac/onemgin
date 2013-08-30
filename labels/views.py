@@ -12,33 +12,31 @@ from products.forms import ProductForm
 
 def home(request):
     recents = Product.objects.filter(image_url__isnull=False).order_by('-created')[:6]
+    term = None
     if request.method == 'POST':
         productform = ProductForm(request.POST)
         if productform.is_valid():
-            print 'valid'
             code = productform.cleaned_data['ASIN']
             asin = re.compile("^B\d{2}\w{7}|\d{9}(X|\d)$")
-            print 're compiled'
             if asin.match(code):
                 product = amazon_utils.get_or_create_product(code)
             else:
-                print 'no match'
-                asin = amazon_utils.random_product()
+                asin = None
+                term = None
+                while not asin and not term:
+                    asin, term = amazon_utils.random_product()
 
                 product = amazon_utils.get_or_create_product(asin)
-                print 'generated product'
             ean = product.generate_barcode(type='ean13')
-            print 'generated ean'
             upc = product.generate_barcode(type='upca')
-            print 'generaged upca'
             qrcode = product.generate_barcode(type='qrcode', text=False)
-            print 'generated qr'
             return render_to_response('labels/generator_output.html', 
                                     {
                                      'product': product,
                                      'ean': ean,
                                      'upc': upc,
                                      'qrcode': qrcode,
+                                     'search_term': term,
                                      
                                     },
                                     context_instance=RequestContext(request))

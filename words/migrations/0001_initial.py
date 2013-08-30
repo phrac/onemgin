@@ -11,7 +11,7 @@ class Migration(SchemaMigration):
         # Adding model 'Word'
         db.create_table(u'words_word', (
             (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('word', self.gf('django.db.models.fields.CharField')(max_length=25)),
+            ('word', self.gf('django.db.models.fields.CharField')(unique=True, max_length=25)),
             ('type', self.gf('django.db.models.fields.related.ForeignKey')(to=orm['words.WordType'])),
         ))
         db.send_create_signal(u'words', ['Word'])
@@ -34,10 +34,10 @@ class Migration(SchemaMigration):
 
     models = {
         u'words.word': {
-            'Meta': {'object_name': 'Word'},
+            'Meta': {'ordering': "['word']", 'object_name': 'Word'},
             u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
             'type': ('django.db.models.fields.related.ForeignKey', [], {'to': u"orm['words.WordType']"}),
-            'word': ('django.db.models.fields.CharField', [], {'max_length': '25'})
+            'word': ('django.db.models.fields.CharField', [], {'unique': 'True', 'max_length': '25'})
         },
         u'words.wordtype': {
             'Meta': {'object_name': 'WordType'},

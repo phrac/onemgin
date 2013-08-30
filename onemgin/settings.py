@@ -1,4 +1,8 @@
 import os
+import djcelery
+djcelery.setup_loader()
+
+BROKER_URL = 'amqp://guest:guest@localhost:5672/'
 DIRNAME = os.path.dirname(__file__)
 
 DEBUG = True
@@ -132,6 +136,7 @@ INSTALLED_APPS = (
     'south',
     'storages',
     'sorl.thumbnail',
+    'djcelery',
 
     # Local apps
     'labels',

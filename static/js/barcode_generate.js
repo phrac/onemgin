@@ -16,7 +16,7 @@ $(document).ready(function() {
 
             },
             error: function(xhr, textStatus, error) {
-                $(divUpdate).hide().html('<h3>Error generating barcode</h3>').fadeIn("slow");
+                $(divUpdate).hide().html('<h3>Oops! '+textStatus+': '+error+'</h3>').fadeIn("slow");
                 $('button').button('reset');
                 $('.barcode_generator').each(function() {
                         this.reset();
