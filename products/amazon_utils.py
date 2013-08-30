@@ -1,6 +1,7 @@
 from amazon.api import AmazonAPI
 from django.conf import settings
 from products.models import Product
+from words.models import Word, WordType
 from sorl.thumbnail import get_thumbnail
 from random import choice, randint
 import pickle
@@ -18,13 +19,15 @@ def process_browse_node(browse_node_list):
     pass
 
 def random_product():
-    pkl = open(settings.PRODUCT_PICKLE_FILE, 'r+')
-    words = pickle.load(pkl)
-    word = choice(words)
-    pkl.close()
+    noun = WordType.objects.get(type='Noun')
+    adj = WordType.objects.get(type='Adjective')
+    search_noun = Word.objects.filter(type=noun).order_by('?')[0]
+    search_adj = Word.objects.filter(type=adj).order_by('?')[0]
+    word = "%s %s" % (search_adj, search_noun)
+
     print "Searching %s" % word
     amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
-    products = amazon.search_n(20, Keywords="%s" % word, SearchIndex='All')
+    products = amazon.search_n(20, Keywords="%s" % (word), SearchIndex='All')
     count = len(products)
     product = products[randint(0,count-1)]
     valid = None
@@ -36,14 +39,11 @@ def random_product():
     wordlist = pos_tag(word_tokenize(product.title.lower()))
     for w in wordlist:
         if w[1] == 'NN' or w[1] == 'NNS':
-            if w[0] not in words and len(w[0]) >= 3:
-                print "Appending %s" % w[0]
-                words.append(w[0])
-    pkl = open(settings.PRODUCT_PICKLE_FILE, 'w').close()
-    pkl = open(settings.PRODUCT_PICKLE_FILE, 'w+')
-    pkl.truncate()
-    pickle.dump(words, pkl)
-    pkl.close()
+            print "Appending %s" % w[0]
+            word, created = Word.objects.get_or_create(word=w[0], type=noun)
+        if w[1] == 'JJ':
+            print "Appending adjective %s" % w[0]
+            word, created = Word.objects.get_or_create(word=w[0], type=adj)
     return product.asin
 
 def get_or_create_product(asin):

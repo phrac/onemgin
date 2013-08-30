@@ -136,6 +136,7 @@ INSTALLED_APPS = (
     # Local apps
     'labels',
     'products',
+    'words',
 
 )
 
