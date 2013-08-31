@@ -17,9 +17,10 @@ def process_browse_node(browse_node_list):
     pass
     
 def fetch_random():
-    search_noun = Word.objects.order_by('?')[0]
-    search_adj = Word.objects.exclude(word=search_noun.word).order_by('?')[0]
-    search_term = "%s %s" % (search_adj, search_noun)
+    search_term = ''
+    words = Word.objects.order_by('?')[:randint(2,3)]
+    for word in words:
+        search_term = "%s %s" % (word, search_term.strip())
     print search_term
     amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
     products = amazon.search_n(5, Keywords="%s" % search_term, SearchIndex='All')
@@ -34,7 +35,6 @@ def validate_product(product):
 def random_product():
     products, search_term = fetch_random()
     i = 0
-    print len(products)
     if len(products) == 0:
         return None, None
     else:
@@ -44,7 +44,7 @@ def random_product():
             return None, None
         product = products[i]
         i += 1
-    print i
+    process_words.delay(product.title)
     return (product.asin, search_term)
 
 def get_or_create_product(asin):
@@ -58,6 +58,10 @@ def get_or_create_product(asin):
         product = Product(asin=asin, upc=az.upc, ean=az.ean, 
                           description=az.title, image_url=az.large_image_url,
                           amazon_url=az.offer_url)
+        
+        product.save()
+        generate_thumb.delay(product, '600x400')
+        generate_thumb.delay(product, '125x125')
     
         product.manufacturer = az.get_attribute('Manufacturer')
         product.brand = az.get_attribute('Brand')
@@ -71,7 +75,7 @@ def get_or_create_product(asin):
         product.height = az.get_attribute('ItemDimensions.Height')
         product.weight = az.get_attribute('ItemDimensions.Weight')
         product.save()
-        generate_thumb.delay(product, '600x400')
+        
 
         
     return product

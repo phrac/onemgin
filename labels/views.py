@@ -3,7 +3,7 @@ from django.shortcuts import render_to_response, redirect, get_object_or_404
 from django.template import RequestContext
 
 import urllib, cStringIO
-import re
+import re, time
 
 from products import amazon_utils
 from products.models import Product
@@ -21,10 +21,11 @@ def home(request):
             if asin.match(code):
                 product = amazon_utils.get_or_create_product(code)
             else:
-                asin = None
-                term = None
+                asin, term = amazon_utils.random_product()
                 while not asin and not term:
+                    time.sleep(1.5)
                     asin, term = amazon_utils.random_product()
+                    
 
                 product = amazon_utils.get_or_create_product(asin)
             ean = product.generate_barcode(type='ean13')
