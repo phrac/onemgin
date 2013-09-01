@@ -16,23 +16,45 @@ def process_browse_node(browse_node_list):
     """
     pass
     
-def fetch_random():
+def fetch_random(num_results=5):
+    """
+    Build a random search term of 2-3 words and perform an Amazon product
+    search.
+
+    :return:
+        An instance of :class:`amazon.api.AmazonSearch`
+    """
+
     search_term = ''
     words = Word.objects.order_by('?')[:randint(2,3)]
     for word in words:
         search_term = "%s %s" % (word, search_term.strip())
     print search_term
     amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
-    products = amazon.search_n(5, Keywords="%s" % search_term, SearchIndex='All')
+    products = amazon.search_n(num_results, Keywords="%s" % search_term, SearchIndex='All')
     return products, search_term
     
 def validate_product(product):
+    """ 
+    Validates the presence of an EAN and UPC of
+    :class:`amazon.api.AmazonProduct`
+
+    :return:
+        Boolean
+    """
     if product.upc and product.ean:
         return True
     else:
         return False
 
 def random_product():
+    """
+    Iterates through a list of Amazon products, finding the first product that
+    contains a UPC and EAN
+
+    :return:
+        An Amazon ASIN
+    """
     products, search_term = fetch_random()
     i = 0
     if len(products) == 0:
@@ -48,6 +70,13 @@ def random_product():
     return (product.asin, search_term)
 
 def get_or_create_product(asin):
+    """
+    Checks the database for an existing ASIN. If not found, try to fetch it
+    using the Amazon Product API.
+
+    :return:
+        An instance of `products.models.Product`
+    """
     try:
         product = Product.objects.get(asin=asin)
     except:
