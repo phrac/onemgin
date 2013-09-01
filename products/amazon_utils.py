@@ -16,19 +16,23 @@ def process_browse_node(browse_node_list):
     """
     pass
     
-def fetch_random(num_results=5):
+def fetch_random(term=None, num_results=5):
     """
     Build a random search term of 2-3 words and perform an Amazon product
     search.
 
     :return:
-        An instance of :class:`amazon.api.AmazonSearch`
+        A tuple containing an instance of :class:`amazon.api.AmazonSearch` and
+        the search term used.
     """
 
-    search_term = ''
-    words = Word.objects.order_by('?')[:randint(2,3)]
-    for word in words:
-        search_term = "%s %s" % (word, search_term.strip())
+    if not term:
+        search_term = ''
+        words = Word.objects.order_by('?')[:randint(2,3)]
+        for word in words:
+            search_term = "%s %s" % (word, search_term.strip())
+    else:
+        search_term = term
     print search_term
     amazon = AmazonAPI(settings.AWS_ACCESS_KEY_ID, settings.AWS_SECRET_ACCESS_KEY, settings.AWS_ASSOCIATE_TAG)
     products = amazon.search_n(num_results, Keywords="%s" % search_term, SearchIndex='All')
@@ -47,7 +51,7 @@ def validate_product(product):
     else:
         return False
 
-def random_product():
+def random_product(term=None):
     """
     Iterates through a list of Amazon products, finding the first product that
     contains a UPC and EAN
@@ -55,7 +59,7 @@ def random_product():
     :return:
         A tuple containing an Amazon ASIN and the search term used
     """
-    products, search_term = fetch_random()
+    products, search_term = fetch_random(term)
     i = 0
     if len(products) == 0:
         return None, None

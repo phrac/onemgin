@@ -21,7 +21,7 @@ def home(request):
             if asin.match(code):
                 product = amazon_utils.get_or_create_product(code)
             else:
-                asin, term = amazon_utils.random_product()
+                asin, term = amazon_utils.random_product(code)
                 while not asin and not term:
                     time.sleep(1.5)
                     asin, term = amazon_utils.random_product()
