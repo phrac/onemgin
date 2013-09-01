@@ -53,7 +53,7 @@ def random_product():
     contains a UPC and EAN
 
     :return:
-        An Amazon ASIN
+        A tuple containing an Amazon ASIN and the search term used
     """
     products, search_term = fetch_random()
     i = 0
