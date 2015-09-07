@@ -17,9 +17,9 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-        'NAME': '',                      # Or path to database file if using sqlite3.
+        'NAME': 'onemgin',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
-        'USER': '',
+        'USER': 'derek',
         'PASSWORD': '',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
@@ -66,7 +66,7 @@ MEDIA_URL = ''
 # Don't put anything in this directory yourself; store your static files
 # in apps' "static/" subdirectories and in STATICFILES_DIRS.
 # Example: "/var/www/example.com/static/"
-STATIC_ROOT = ''
+STATIC_ROOT = '/home/derek/static/onemgin/static/'
 
 # URL prefix for static files.
 # Example: "http://example.com/static/", "http://static.example.com/"
@@ -89,7 +89,7 @@ STATICFILES_FINDERS = (
 )
 
 # Make this unique, and don't share it with anybody.
-SECRET_KEY = ''
+SECRET_KEY = 'asldkfj234onha8dh(*HE(hnn3l2jna9d-23:hads978fh2u3bUDBFGIU(*'
 
 # List of callables that know how to import templates from various sources.
 TEMPLATE_LOADERS = (
@@ -117,7 +117,7 @@ TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
     # Always use forward slashes, even on Windows.
     # Don't forget to use absolute paths, not relative paths.
-    os.path.join(DIRNAME, '../templates')
+    os.path.join(DIRNAME, '../templates'),
 )
 
 INSTALLED_APPS = (
@@ -133,7 +133,6 @@ INSTALLED_APPS = (
     'django.contrib.admindocs',
 
     # Third party apps
-    'south',
     'storages',
     'sorl.thumbnail',
     'djcelery',
@@ -147,8 +146,6 @@ INSTALLED_APPS = (
 
 # Amazon S3 Storage Settings
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto.S3BotoStorage'
-
-# Random Product Pickle File
 PRODUCT_PICKLE_FILE = 'product_words.pkl'
 
 # A sample logging configuration. The only tangible logging
@@ -179,5 +176,10 @@ LOGGING = {
         },
     }
 }
-
-from settings_local import *
+### Amazon S3 Settings ###
+AWS_ACCESS_KEY_ID = 'AKIAJEBQFIW46J5LFB3Q'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_STORAGE_BUCKET_NAME = 'partfindr'
+AWS_ASSOCIATE_TAG = 'partfindr-20'
+AWS_S3_SECURE_URLS = False
+#from settings_local import *
