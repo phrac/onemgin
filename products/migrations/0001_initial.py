@@ -1,54 +1,70 @@
 # -*- coding: utf-8 -*-
-import datetime
-from south.db import db
-from south.v2 import SchemaMigration
-from django.db import models
+from __future__ import unicode_literals
+
+from django.db import models, migrations
 
 
-class Migration(SchemaMigration):
+class Migration(migrations.Migration):
 
-    def forwards(self, orm):
-        # Adding model 'Product'
-        db.create_table(u'products_product', (
-            (u'id', self.gf('django.db.models.fields.AutoField')(primary_key=True)),
-            ('onemg', self.gf('django.db.models.fields.CharField')(unique=True, max_length=13)),
-            ('ean', self.gf('django.db.models.fields.IntegerField')(unique=True, max_length=13)),
-            ('upc', self.gf('django.db.models.fields.IntegerField')(unique=True, max_length=12)),
-            ('jan', self.gf('django.db.models.fields.CharField')(max_length=13, null=True)),
-            ('gtin', self.gf('django.db.models.fields.CharField')(max_length=14, null=True)),
-            ('nsn', self.gf('django.db.models.fields.CharField')(max_length=14, null=True)),
-            ('isbn10', self.gf('django.db.models.fields.CharField')(max_length=10, null=True)),
-            ('isbn13', self.gf('django.db.models.fields.CharField')(max_length=13, null=True)),
-            ('asin', self.gf('django.db.models.fields.CharField')(max_length=10, null=True)),
-            ('brand', self.gf('django.db.models.fields.CharField')(max_length=128, null=True)),
-            ('manufacturer', self.gf('django.db.models.fields.CharField')(max_length=128, null=True)),
-            ('description', self.gf('django.db.models.fields.CharField')(max_length=512, null=True)),
-        ))
-        db.send_create_signal(u'products', ['Product'])
+    dependencies = [
+    ]
 
-
-    def backwards(self, orm):
-        # Deleting model 'Product'
-        db.delete_table(u'products_product')
-
-
-    models = {
-        u'products.product': {
-            'Meta': {'object_name': 'Product'},
-            'asin': ('django.db.models.fields.CharField', [], {'max_length': '10', 'null': 'True'}),
-            'brand': ('django.db.models.fields.CharField', [], {'max_length': '128', 'null': 'True'}),
-            'description': ('django.db.models.fields.CharField', [], {'max_length': '512', 'null': 'True'}),
-            'ean': ('django.db.models.fields.IntegerField', [], {'unique': 'True', 'max_length': '13'}),
-            'gtin': ('django.db.models.fields.CharField', [], {'max_length': '14', 'null': 'True'}),
-            u'id': ('django.db.models.fields.AutoField', [], {'primary_key': 'True'}),
-            'isbn10': ('django.db.models.fields.CharField', [], {'max_length': '10', 'null': 'True'}),
-            'isbn13': ('django.db.models.fields.CharField', [], {'max_length': '13', 'null': 'True'}),
-            'jan': ('django.db.models.fields.CharField', [], {'max_length': '13', 'null': 'True'}),
-            'manufacturer': ('django.db.models.fields.CharField', [], {'max_length': '128', 'null': 'True'}),
-            'nsn': ('django.db.models.fields.CharField', [], {'max_length': '14', 'null': 'True'}),
-            'onemg': ('django.db.models.fields.CharField', [], {'unique': 'True', 'max_length': '13'}),
-            'upc': ('django.db.models.fields.IntegerField', [], {'unique': 'True', 'max_length': '12'})
-        }
-    }
-
-    complete_apps = ['products']
+    operations = [
+        migrations.CreateModel(
+            name='Barcode',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('image', models.FileField(null=True, upload_to=b'barcodes/ean13/')),
+            ],
+        ),
+        migrations.CreateModel(
+            name='BarcodeType',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('name', models.CharField(max_length=32)),
+            ],
+        ),
+        migrations.CreateModel(
+            name='Product',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('onemg', models.CharField(unique=True, max_length=13)),
+                ('ean', models.CharField(unique=True, max_length=13)),
+                ('upc', models.CharField(unique=True, max_length=12)),
+                ('jan', models.CharField(max_length=13, null=True)),
+                ('gtin', models.CharField(max_length=14, null=True)),
+                ('nsn', models.CharField(max_length=14, null=True)),
+                ('isbn10', models.CharField(max_length=10, null=True)),
+                ('isbn13', models.CharField(max_length=13, null=True)),
+                ('asin', models.CharField(max_length=10, null=True)),
+                ('brand', models.CharField(max_length=128, null=True)),
+                ('manufacturer', models.CharField(max_length=128, null=True)),
+                ('mpn', models.CharField(max_length=64, null=True)),
+                ('part_number', models.CharField(max_length=64, null=True)),
+                ('sku', models.CharField(max_length=64, null=True)),
+                ('model_number', models.CharField(max_length=64, null=True)),
+                ('length', models.FloatField(null=True)),
+                ('width', models.FloatField(null=True)),
+                ('height', models.FloatField(null=True)),
+                ('weight', models.FloatField(null=True)),
+                ('description', models.CharField(max_length=512, null=True)),
+                ('image_url', models.CharField(max_length=512, null=True)),
+                ('amazon_url', models.URLField(null=True)),
+                ('created', models.DateTimeField(auto_now_add=True, null=True)),
+            ],
+        ),
+        migrations.AddField(
+            model_name='barcode',
+            name='product',
+            field=models.ForeignKey(to='products.Product'),
+        ),
+        migrations.AddField(
+            model_name='barcode',
+            name='type',
+            field=models.ForeignKey(to='products.BarcodeType'),
+        ),
+        migrations.AlterUniqueTogether(
+            name='barcode',
+            unique_together=set([('product', 'type')]),
+        ),
+    ]
