@@ -176,10 +176,5 @@ LOGGING = {
         },
     }
 }
-### Amazon S3 Settings ###
-AWS_ACCESS_KEY_ID = 'AKIAJEBQFIW46J5LFB3Q'
-AWS_SECRET_ACCESS_KEY = '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'
-AWS_STORAGE_BUCKET_NAME = 'partfindr'
-AWS_ASSOCIATE_TAG = 'partfindr-20'
-AWS_S3_SECURE_URLS = False
-#from settings_local import *
+
+from settings_local import *
